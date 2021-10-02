@@ -1,4 +1,4 @@
-var To=Object.defineProperty;var Do=(r,e,t)=>e in r?To(r,e,{enumerable:!0,configurable:!0,writable:!0,value:t}):r[e]=t;var vr=(r,e,t)=>(Do(r,typeof e!="symbol"?e+"":e,t),t);import{l as Jr}from"./index.93e18523.js";/**
+var To=Object.defineProperty;var Do=(r,e,t)=>e in r?To(r,e,{enumerable:!0,configurable:!0,writable:!0,value:t}):r[e]=t;var vr=(r,e,t)=>(Do(r,typeof e!="symbol"?e+"":e,t),t);import{l as Jr}from"./index.e33e085c.js";/**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
@@ -355,10 +355,16 @@ If the user would like to obtain more information of the Website’s Privacy Pol
 
 
 
-`;this.render(e)}}class dl extends Ne{constructor(e){super(e)}async enter(){console.log("Select camera");var e="Undefined";let t=await getPreferredVideoDevice();if(t&&(e=t.label),window.videoDevices.length==0){this.render(_e`<p>No camera available</p>`);return}let n=_e`
-        <p>Default camera: ${e}</p>
-        <p>All cameras:</p>
-        <ul>
-          ${window.videoDevices.map(i=>_e`<li>${i.label}</li>`)}
-        </ul>
-      `;this.render(n)}async selectLang(e){console.log("Selecting language",e),window.preferredLanguage=e,localStorage.setItem("preferredLanguage",e),window.history.back(),window.initialHeader()}}var vl=[{name:"intro",className:tl},{name:"displayhcert",className:Ms},{name:"demo",className:ks},{name:"verifier",className:Ku},{name:"swnotify",className:el},{name:"spinner",className:rl},{name:"page404",className:Us},{name:"displayNormalQR",className:nl},{name:"selectLanguage",className:ul},{name:"termsOfUse",className:ll},{name:"privacyPolicy",className:hl},{name:"selectCamera",className:dl}];export{vl as pageDefs};
+`;this.render(e)}}class dl extends Ne{constructor(e){super(e)}async enter(){if(console.log("Select camera"),await getPreferredVideoDevice(),window.videoDevices.length==0){this.render(_e`<p>No camera available</p>`);return}let e=_e`
+        <div class="container padding-16">
+
+            <ul class="w3-ul w3-card-4">
+            ${window.videoDevices.map(t=>_e`
+                <li class="bar" @click=${()=>this.setCamera(t.deviceId)}>
+                    <div class="bar-item" style="padding:8px;">
+                        <div class="h5" style="vertical-align:middle;">${t.label}</div>
+                    </div>
+                </li>`)}
+            </ul>
+        </div>
+        `;this.render(e)}async setCamera(e){console.log("Selecting camera",e),window.selectedCamera=e,localStorage.setItem("selectedCamera",e),window.history.back(),window.initialHeader()}}var vl=[{name:"intro",className:tl},{name:"displayhcert",className:Ms},{name:"demo",className:ks},{name:"verifier",className:Ku},{name:"swnotify",className:el},{name:"spinner",className:rl},{name:"page404",className:Us},{name:"displayNormalQR",className:nl},{name:"selectLanguage",className:ul},{name:"termsOfUse",className:ll},{name:"privacyPolicy",className:hl},{name:"selectCamera",className:dl}];export{vl as pageDefs};

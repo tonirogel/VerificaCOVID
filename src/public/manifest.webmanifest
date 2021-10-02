@@ -1,6 +1,6 @@
 {
     "name": "EU COVID Credentials",
-    "short_name": "EUDCC",
+    "short_name": "VerificaCOVID",
     "icons": [
         {
             "src": "./icon-192.png",

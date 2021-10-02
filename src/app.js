@@ -484,6 +484,7 @@ function isBackCameraLabel(label) {
 }
 
 window.defaultPreferredCamera = undefined
+window.selectedCamera = undefined
 window.videoDevices = []
 window.frontCameras = []
 window.backCameras = []
