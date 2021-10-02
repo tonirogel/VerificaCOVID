@@ -10,8 +10,6 @@ export class SelectCamera extends AbstractPage {
     async enter() {
         console.log("Select camera")
 
-        let width = await this.checkCamera()
-
         var preferredLabel = "Undefined"
         let preferredCamera = await getPreferredVideoDevice()
         if (preferredCamera) {
@@ -39,7 +37,6 @@ export class SelectCamera extends AbstractPage {
                 )}
             </ul>
 
-            <p>${width}</p>
         </div>
         `
         this.render(theHtml)
@@ -56,10 +53,6 @@ export class SelectCamera extends AbstractPage {
     async checkCamera() {
         let stream;
         let constraints = {
-            audio: false,
-            video: true
-        }
-        constraints = {
             audio: false,
             video: {
                 width: { ideal: 1080, max: 1920 },
