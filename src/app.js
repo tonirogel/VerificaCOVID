@@ -543,13 +543,13 @@ window.getVideoDevices = getVideoDevices
 
 async function getPreferredVideoDevice() {
 
+    // Get all video devices, front and back
+    await getVideoDevices()
+
     // Select specific device only for Android devices
     if ("Android" !== getPlatformOS()) {
         return undefined;
     }
-
-    // Get all video devices, front and back
-    await getVideoDevices()
 
     if (window.videoDevices.length > 0) {
         // The main recommended back camera is the last one in the list
