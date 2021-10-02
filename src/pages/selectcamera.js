@@ -10,6 +10,8 @@ export class SelectCamera extends AbstractPage {
     async enter() {
         console.log("Select camera")
 
+        let width = await this.checkCamera()
+
         var preferredLabel = "Undefined"
         let preferredCamera = await getPreferredVideoDevice()
         if (preferredCamera) {
@@ -36,6 +38,8 @@ export class SelectCamera extends AbstractPage {
             
                 )}
             </ul>
+
+            <p>${width}</p>
         </div>
         `
         this.render(theHtml)
@@ -47,6 +51,39 @@ export class SelectCamera extends AbstractPage {
         localStorage.setItem("selectedCamera", l)
         window.history.back()
         window.initialHeader();
+    }
+
+    async checkCamera() {
+        let stream;
+        let constraints = {
+            audio: false,
+            video: {
+                width: { min: 360, ideal: 640, max: 1920 },
+                height: { min: 240, ideal: 480, max: 1080 },
+                facingMode: "environment"
+            }
+        }
+
+        try {
+            stream = await navigator.mediaDevices.getUserMedia(constraints);
+            let track = stream.getVideoTracks()[0]
+            let settings = track.getSettings()
+            console.log(settings)
+            let s = `${settings.width}x${settings.height}`
+            return s;
+        }
+        catch {
+            // Ignored
+        }
+        finally {
+            if (stream !== undefined) {
+                stream.getVideoTracks().forEach((track) => {
+                    track.stop();
+                });
+            }
+        }
+
+
     }
 }
 

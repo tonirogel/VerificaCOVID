@@ -1,4 +1,4 @@
-var To=Object.defineProperty;var Do=(r,e,t)=>e in r?To(r,e,{enumerable:!0,configurable:!0,writable:!0,value:t}):r[e]=t;var vr=(r,e,t)=>(Do(r,typeof e!="symbol"?e+"":e,t),t);import{l as Jr}from"./index.10473047.js";/**
+var To=Object.defineProperty;var Do=(r,e,t)=>e in r?To(r,e,{enumerable:!0,configurable:!0,writable:!0,value:t}):r[e]=t;var vr=(r,e,t)=>(Do(r,typeof e!="symbol"?e+"":e,t),t);import{l as Jr}from"./index.4eea62d0.js";/**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
@@ -354,16 +354,18 @@ If the user would like to obtain more information of the Website’s Privacy Pol
 
 
 
-`;this.render(e)}}class dl extends Ne{constructor(e){super(e)}async enter(){if(console.log("Select camera"),await getPreferredVideoDevice(),window.videoDevices.length==0){this.render(_e`<p>No camera available</p>`);return}let e=_e`
+`;this.render(e)}}class dl extends Ne{constructor(e){super(e)}async enter(){console.log("Select camera");let e=await this.checkCamera();if(await getPreferredVideoDevice(),window.videoDevices.length==0){this.render(_e`<p>No camera available</p>`);return}let t=_e`
         <div class="container padding-16">
 
             <ul class="w3-ul w3-card-4">
-            ${window.videoDevices.map(t=>_e`
-                <li class="bar" @click=${()=>this.setCamera(t.deviceId)}>
+            ${window.videoDevices.map(n=>_e`
+                <li class="bar" @click=${()=>this.setCamera(n.deviceId)}>
                     <div class="bar-item" style="padding:8px;">
-                        <div class="h5" style="vertical-align:middle;">${t.label}</div>
+                        <div class="h5" style="vertical-align:middle;">${n.label}</div>
                     </div>
                 </li>`)}
             </ul>
+
+            <p>${e}</p>
         </div>
-        `;this.render(e)}async setCamera(e){console.log("Selecting camera",e),window.selectedCamera=e,localStorage.setItem("selectedCamera",e),window.history.back(),window.initialHeader()}}var vl=[{name:"intro",className:tl},{name:"displayhcert",className:Ms},{name:"demo",className:ks},{name:"verifier",className:Ku},{name:"swnotify",className:el},{name:"spinner",className:rl},{name:"page404",className:Us},{name:"displayNormalQR",className:nl},{name:"selectLanguage",className:ul},{name:"termsOfUse",className:ll},{name:"privacyPolicy",className:hl},{name:"selectCamera",className:dl}];export{vl as pageDefs};
+        `;this.render(t)}async setCamera(e){console.log("Selecting camera",e),window.selectedCamera=e,localStorage.setItem("selectedCamera",e),window.history.back(),window.initialHeader()}async checkCamera(){let e,t={audio:!1,video:{width:{min:360,ideal:640,max:1920},height:{min:240,ideal:480,max:1080},facingMode:"environment"}};try{e=await navigator.mediaDevices.getUserMedia(t);let i=e.getVideoTracks()[0].getSettings();return console.log(i),`${i.width}x${i.height}`}catch{}finally{e!==void 0&&e.getVideoTracks().forEach(n=>{n.stop()})}}}var vl=[{name:"intro",className:tl},{name:"displayhcert",className:Ms},{name:"demo",className:ks},{name:"verifier",className:Ku},{name:"swnotify",className:el},{name:"spinner",className:rl},{name:"page404",className:Us},{name:"displayNormalQR",className:nl},{name:"selectLanguage",className:ul},{name:"termsOfUse",className:ll},{name:"privacyPolicy",className:hl},{name:"selectCamera",className:dl}];export{vl as pageDefs};
