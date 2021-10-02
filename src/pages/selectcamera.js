@@ -59,6 +59,14 @@ export class SelectCamera extends AbstractPage {
             audio: false,
             video: true
         }
+        constraints = {
+            audio: false,
+            video: {
+                width: { ideal: 1080, max: 1920 },
+                facingMode: "environment"
+            }
+        }
+
 
         try {
             stream = await navigator.mediaDevices.getUserMedia(constraints);
