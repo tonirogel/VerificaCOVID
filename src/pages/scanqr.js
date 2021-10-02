@@ -2,7 +2,6 @@
 var gotoPage = window.gotoPage
 import { html } from 'lit-html';
 import {log} from '../log'
-import { BrowserMultiFormatReader, NotFoundException } from '@zxing/library';
 import { BrowserQRCodeReader } from '@zxing/browser';
 import { AbstractPage } from './abstractpage'
 
@@ -65,9 +64,6 @@ export class ScanQrPage extends AbstractPage {
                     processQRpiece(result)
                 }
 
-            }
-            if (err) {
-                console.error(err)
             }
         })
 
