@@ -81,7 +81,7 @@ export class ScanQrPage extends AbstractPage {
     async exit() {
         // Reset the decoder just in case the camera was still working
         if (this.controls) {
-            this.codeReader.reset()
+            this.controls.stop()
         }
         this.videoElem.style.display = "none"
     }
