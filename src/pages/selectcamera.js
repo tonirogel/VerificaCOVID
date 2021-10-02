@@ -10,7 +10,11 @@ export class SelectCamera extends AbstractPage {
     async enter() {
         console.log("Select camera")
 
+        var preferredLabel = "Undefined"
         let preferredCamera = await getPreferredVideoDevice()
+        if (preferredCamera) {
+            preferredLabel = preferredCamera.label
+        }
 
         if (window.videoDevices.length == 0) {
             this.render(html`<p>No camera available</p>`)
@@ -18,7 +22,7 @@ export class SelectCamera extends AbstractPage {
         }
 
         let theHtml = html`
-        <p>Default camera: ${preferredCamera.label}</p>
+        <p>Default camera: ${preferredLabel}</p>
         <p>All cameras:</p>
         <ul>
           ${window.videoDevices.map((camera) =>
