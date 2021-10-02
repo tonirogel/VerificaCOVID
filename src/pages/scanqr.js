@@ -45,9 +45,29 @@ export class ScanQrPage extends AbstractPage {
         // Prepare the screen, waiting for the video
         this.render(theHtml)
 
+        let constraints;
+        if (selectedCameraId == undefined) {
+            constraints = {
+                audio: false,
+                video: {
+                    width: { ideal: 1080, max: 1920 },
+                    facingMode: "environment"
+                }
+            }
+        } else {
+            constraints = {
+                audio: false,
+                video: {
+                    width: { ideal: 1080, max: 1920 },
+                    deviceId: selectedCameraId
+                }
+            }
+        }
+
+
         // Call the QR decoder using the video element just created
         // If cameraQR is undefined, the decoder will choose the appropriate camera
-        this.controls = await this.codeReader.decodeFromVideoDevice(selectedCameraId, this.videoElem, (result, err, controls) => {
+        this.controls = await this.codeReader.decodeFromVideoDevice(constraints, this.videoElem, (result, err, controls) => {
             if (result) {
                 // Successful decode
                 console.log("RESULT", result)
