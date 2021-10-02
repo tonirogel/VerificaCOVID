@@ -14,6 +14,7 @@ export class ScanQrPage extends AbstractPage {
 
         // Initialize the QR library
         this.codeReader = new BrowserQRCodeReader()
+        this.controls = undefined
 
         // Create the 'video' element and attach the event handler
         this.videoElem = document.createElement("video")
@@ -49,21 +50,23 @@ export class ScanQrPage extends AbstractPage {
 
         // Call the QR decoder using the video element just created
         // If cameraQR is undefined, the decoder will choose the appropriate camera
-        this.codeReader.decodeFromVideoDevice(deviceId, this.videoElem, (result, err) => {
+        this.controls = await codeReader.decodeFromVideoDevice(selectedDeviceId, previewElem, (result, err, controls) => {
             if (result) {
                 // Successful decode
                 console.log("RESULT", result)
+
+                // Only decode Health Certificates
                 let qrType = detectQRtype(result)
 
                 if (qrType === QR_HC1) {
-                    // Reset the decoder to stop the video
-                    this.codeReader.reset()
+                    // Stop scanning
+                    controls.stop()
                     // And process the scanned QR code
                     processQRpiece(result)
                 }
 
             }
-            if (err && !(err instanceof NotFoundException)) {
+            if (err) {
                 console.error(err)
             }
         })
@@ -77,7 +80,9 @@ export class ScanQrPage extends AbstractPage {
     
     async exit() {
         // Reset the decoder just in case the camera was still working
-        this.codeReader.reset()
+        if (this.controls) {
+            this.codeReader.reset()
+        }
         this.videoElem.style.display = "none"
     }
 
