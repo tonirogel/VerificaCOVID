@@ -24,11 +24,18 @@ export class ScanQrPage extends AbstractPage {
 
     async enter() {
 
-        // Select the most appropriate camera for scanning a QR, using some heuristics
-        this.cameraQR = await window.getPreferredVideoDevice()
-        if (this.cameraQR !== undefined) {
-            var deviceId = this.cameraQR.deviceId
-            var deviceLabel = this.cameraQR.label
+        // Use this camera if the user selected it sometime in the past
+        var selectedCameraId = localStorage.getItem("selectedCamera")
+ 
+        // Otherwise, try to select the most appropriate camera for scanning a QR
+        if (selectedCameraId == null) {
+            let preferredCamera = await window.getPreferredVideoDevice()
+            if (preferredCamera != undefined) {
+                selectedCameraId = preferredCamera.deviceId
+            }
+        }
+        if (selectedCameraId == null) {
+            selectedCameraId == undefined
         }
 
         let theHtml = html`
@@ -40,7 +47,7 @@ export class ScanQrPage extends AbstractPage {
 
         // Call the QR decoder using the video element just created
         // If cameraQR is undefined, the decoder will choose the appropriate camera
-        this.controls = await this.codeReader.decodeFromVideoDevice(deviceId, this.videoElem, (result, err, controls) => {
+        this.controls = await this.codeReader.decodeFromVideoDevice(selectedCameraId, this.videoElem, (result, err, controls) => {
             if (result) {
                 // Successful decode
                 console.log("RESULT", result)
