@@ -3,6 +3,7 @@ var gotoPage = window.gotoPage
 import { html } from 'lit-html';
 import {log} from '../log'
 import { BrowserMultiFormatReader, NotFoundException } from '@zxing/library';
+import { BrowserQRCodeReader } from '@zxing/browser';
 import { AbstractPage } from './abstractpage'
 
 export class ScanQrPage extends AbstractPage {
@@ -12,7 +13,7 @@ export class ScanQrPage extends AbstractPage {
         super(id);
 
         // Initialize the QR library
-        this.codeReader = new BrowserMultiFormatReader()
+        this.codeReader = new BrowserQRCodeReader()
 
         // Create the 'video' element and attach the event handler
         this.videoElem = document.createElement("video")
