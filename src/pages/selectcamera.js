@@ -57,10 +57,7 @@ export class SelectCamera extends AbstractPage {
         let stream;
         let constraints = {
             audio: false,
-            video: {
-                width: { ideal: 1080, max: 1920 },
-                facingMode: "environment"
-            }
+            video: true
         }
 
         try {
