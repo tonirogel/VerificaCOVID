@@ -31,17 +31,8 @@ export class ScanQrPage extends AbstractPage {
             var deviceLabel = this.cameraQR.label
         }
 
-        // let theHtml = html`
-        //     ${this.videoElem}
-        //     <ul>
-        //     ${this.devices.map((device) =>
-        //         html`<li>${device.kind}: ${device.label}</li>`
-        //     )}
-        //     </ul>
-        // `;
         let theHtml = html`
             ${this.videoElem}
-            <p>${deviceLabel}</p>
         `;
 
         // Prepare the screen, waiting for the video
