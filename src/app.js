@@ -483,6 +483,7 @@ function isBackCameraLabel(label) {
     });
 }
 
+window.defaultPreferredCamera = undefined
 window.videoDevices = []
 window.frontCameras = []
 window.backCameras = []
@@ -510,7 +511,7 @@ async function getVideoDevices() {
                     video: true,
                     audio: false,
                 });
-                // Try again to get the devices
+                // Try again to get the devices with label and id information
                 allDevices = await navigator.mediaDevices.enumerateDevices()
                 window.videoDevices = allDevices.filter((device) => {
                     return device.kind === "videoinput";
@@ -527,16 +528,15 @@ async function getVideoDevices() {
                 }
             }
 
-
         }
     }
 
-    window.frontCameras = window.videoDevices.filter((device) => {
-        return !isBackCameraLabel(device.label)
-    });
-    window.backCameras = window.videoDevices.filter((device) => {
-        return isBackCameraLabel(device.label)
-    });
+    // window.frontCameras = window.videoDevices.filter((device) => {
+    //     return !isBackCameraLabel(device.label)
+    // });
+    // window.backCameras = window.videoDevices.filter((device) => {
+    //     return isBackCameraLabel(device.label)
+    // });
 
 }
 window.getVideoDevices = getVideoDevices
@@ -551,17 +551,26 @@ async function getPreferredVideoDevice() {
     // Get all video devices, front and back
     await getVideoDevices()
 
-    if (window.backCameras.length > 0) {
-        // Back cameras are ordered in inverse order of priority
+    if (window.videoDevices.length > 0) {
+        // The main recommended back camera is the last one in the list
         // Get the last back camera
-        return window.backCameras[window.backCameras.length - 1]
-    } else if (window.frontCameras.length > 0) {
-        // Front cameras are ordered by priority
-        // Get the first front camera
-        return window.frontCameras[0]
+        window.defaultPreferredCamera = window.videoDevices[window.videoDevices.length - 1]
     } else {
         return undefined
     }
+    return window.defaultPreferredCamera
+
+    // if (window.backCameras.length > 0) {
+    //     // Back cameras are ordered in inverse order of priority
+    //     // Get the last back camera
+    //     return window.backCameras[window.backCameras.length - 1]
+    // } else if (window.frontCameras.length > 0) {
+    //     // Front cameras are ordered by priority
+    //     // Get the first front camera
+    //     return window.frontCameras[0]
+    // } else {
+    //     return undefined
+    // }
 
 }
 window.getPreferredVideoDevice = getPreferredVideoDevice
@@ -569,6 +578,8 @@ window.getPreferredVideoDevice = getPreferredVideoDevice
 // Request camera access permission when DOM is loaded
 document.addEventListener('DOMContentLoaded', async (event) => {
     console.log('DOM fully loaded and parsed');
+
+    // Get the best camera for QR scanning
     getPreferredVideoDevice()
 
     try {
