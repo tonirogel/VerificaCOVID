@@ -145,7 +145,7 @@ window.T = T
 // The header and navigation menu
 // **************************************
 
-import logo from "./logo.png"
+//import logo from "./logo.png"
 
 function toggleMenu() {
     let x = document.getElementById("mobileMenu")
