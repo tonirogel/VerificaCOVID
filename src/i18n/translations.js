@@ -168,9 +168,9 @@ export var translations = {
     "Not Validated": {
         "es": "No Validado",
         "ca": "No Validat",
-        "fr": "Échec !",
-        "de": "Fehlgeschlagen!",
-        "it": "Errore"
+        "fr": "Non Validé",
+        "de": "Nicht Validiert",
+        "it": "Non Validato"
     },
     "The certificate is valid.": {
         "es": "El certificado es válido",
