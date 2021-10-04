@@ -123,14 +123,6 @@ export var translations = {
         "de": "Akzeptieren",
         "it": "Accetta"
     },
-
-    "Failed!": {
-        "es": "Error",
-        "ca": "Failed!",
-        "fr": "Échec !",
-        "de": "Fehlgeschlagen!",
-        "it": "Errore"
-    },
     "Certificate is expired.": {
         "es": "El certificado está expirado.",
         "ca": "El certificat ha caducat.",
@@ -151,13 +143,6 @@ export var translations = {
         "de": "Signaturüberprüfung fehlgeschlagen. Das Zertifikat ist ungültig.",
         "it": "La verifica della firma non è andata a buon fine. Il certificato non risulta valido."
     },
-    "Warning!": {
-        "es": "Atención",
-        "ca": "Atenció",
-        "fr": "Attention !",
-        "de": "Warnung!",
-        "it": "Attenzione!"
-    },
     "$warningmsg": {
         "en": "The certificate is not valid for travel, even if it is correctly signed with a PRE key.",
         "es": "El certificado no es válido para viajar, aunque está correctamente firmado con una llave de PRE.",
@@ -172,6 +157,20 @@ export var translations = {
         "fr": "Validé !",
         "de": "Validiert!",
         "it": "Verificato con successo!"
+    },
+    "Warning!": {
+        "es": "Atención",
+        "ca": "Atenció",
+        "fr": "Attention !",
+        "de": "Warnung!",
+        "it": "Attenzione!"
+    },
+    "Not Validated": {
+        "es": "No Validado",
+        "ca": "No Validat",
+        "fr": "Échec !",
+        "de": "Fehlgeschlagen!",
+        "it": "Errore"
     },
     "The certificate is valid.": {
         "es": "El certificado es válido",
