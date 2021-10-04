@@ -120,8 +120,9 @@ window.gotoPage = gotoPage
 // Translation support
 // **************************************
 
-// Preferred language, either from the browser or set explicitly by the user
-var preferredLanguage = navigator.language.substring(0,2)
+// Use "ca" as default language unless set explicitly by the
+// user in the application.
+var preferredLanguage = "ca"
 let l = localStorage.getItem("preferredLanguage")
 if (l) {preferredLanguage = l}
 // Set preferred language in global scope, for easy module access
