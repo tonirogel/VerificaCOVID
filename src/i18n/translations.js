@@ -116,6 +116,13 @@ export var translations = {
         "de": "Bitte klicken Sie auf Akzeptieren, um die Seite zu aktualisieren.",
         "it": "Fare click su Accetta per aggiornare la pagina."
     },
+    "Verification keys updated.": {
+        "es": "LLaves de verificación actualizadas",
+        "ca": "Claus de verificació actualitzades",
+        "fr": "Clés de vérification mises à jour",
+        "de": "Verifizierungsschlüssel aktualisiert",
+        "it": "Chiavi di verifica aggiornate"
+    },
     "Accept": {
         "es": "Aceptar",
         "ca": "Acceptar",

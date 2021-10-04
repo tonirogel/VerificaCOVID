@@ -188,7 +188,7 @@ function initialHeader() {
     </div>
 
     <div class="w3-bar-block xlarge color-primary hide" id="mobileMenu">
-        <a onclick='reloadPublickeys()' href="javascript:void(0)" class="w3-bar-item w3-large btn-menu">${T("Update public keys")}</a>
+        <a onclick='gotoPage("refreshKeys")' href="javascript:void(0)" class="w3-bar-item w3-large btn-menu">${T("Update public keys")}</a>
         <a onclick='gotoPage("selectLanguage")' href="javascript:void(0)" class="w3-bar-item w3-large btn-menu">${T("Language")}</a>
         <a onclick='gotoPage("selectCamera")' href="javascript:void(0)" class="w3-bar-item w3-large btn-menu">${T("Camera")}</a>
     </div>
