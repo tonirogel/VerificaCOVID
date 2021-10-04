@@ -4,7 +4,7 @@
 set -e
 
 git add .
-git commit -m 'deploy'
+git commit -m 'deploy keys'
 
 echo Pushing to Github repository
 git push -u origin main
