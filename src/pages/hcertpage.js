@@ -98,16 +98,16 @@ export class DisplayHcert extends AbstractPage {
         // The credential
         let payload = cred[1];
 
-        let title = "Validated!"
+        let title = "Validated"
         let image = ok_image
         let color = "bkg-success"
 
         if (verification.result === "WARNING") {
-            title = "Warning!"
+            title = "Warning"
             image = warning_image
             color = "bkg-warning"
         } else if (verification.result === "ERROR") {
-            title = "Failed!"
+            title = "Not Validated"
             image = error_image
             color = "bkg-error"
         }

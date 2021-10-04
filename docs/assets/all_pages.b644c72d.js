@@ -1,4 +1,4 @@
-var To=Object.defineProperty;var Do=(r,e,t)=>e in r?To(r,e,{enumerable:!0,configurable:!0,writable:!0,value:t}):r[e]=t;var vr=(r,e,t)=>(Do(r,typeof e!="symbol"?e+"":e,t),t);import{l as Jr}from"./index.e6ddec71.js";/**
+var To=Object.defineProperty;var Do=(r,e,t)=>e in r?To(r,e,{enumerable:!0,configurable:!0,writable:!0,value:t}):r[e]=t;var vr=(r,e,t)=>(Do(r,typeof e!="symbol"?e+"":e,t),t);import{l as Jr}from"./index.5cef40d2.js";/**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
@@ -14,7 +14,7 @@ var To=Object.defineProperty;var Do=(r,e,t)=>e in r?To(r,e,{enumerable:!0,config
                 <h3>Failed!</h3>
                 <p>The credential has an invalid format.</p>
             </div>
-            `}renderDetail(e,t){let n=e[1],i="Validated!",a=Ds,o="bkg-success";return t.result==="WARNING"?(i="Warning!",a=Ns,o="bkg-warning"):t.result==="ERROR"&&(i="Failed!",a=Rs,o="bkg-error"),de`
+            `}renderDetail(e,t){let n=e[1],i="Validated",a=Ds,o="bkg-success";return t.result==="WARNING"?(i="Warning",a=Ns,o="bkg-warning"):t.result==="ERROR"&&(i="Not Validated",a=Rs,o="bkg-error"),de`
 
             <div class="container">
 

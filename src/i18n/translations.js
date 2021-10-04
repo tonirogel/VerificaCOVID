@@ -116,7 +116,7 @@ export var translations = {
         "de": "Bitte klicken Sie auf Akzeptieren, um die Seite zu aktualisieren.",
         "it": "Fare click su Accetta per aggiornare la pagina."
     },
-    "Verification keys updated.": {
+    "Verification keys updated": {
         "es": "LLaves de verificación actualizadas",
         "ca": "Claus de verificació actualitzades",
         "fr": "Clés de vérification mises à jour",
@@ -158,18 +158,18 @@ export var translations = {
         "de": "Das Zertifikat ist für Reisen ungültig, auch wenn es korrekt mit einem PRE-Schlüssel signiert ist.",
         "it": "Il certificato non risulta valido per viaggiare, sebbene sia stato firmato correttamente con la chiave PRE."
     },
-    "Validated!": {
-        "es": "Validado!",
+    "Validated": {
+        "es": "Validado",
         "ca": "Validat",
-        "fr": "Validé !",
-        "de": "Validiert!",
-        "it": "Verificato con successo!"
+        "fr": "Validé",
+        "de": "Validiert",
+        "it": "Verificato con successo"
     },
-    "Warning!": {
+    "Warning": {
         "es": "Atención",
         "ca": "Atenció",
-        "fr": "Attention !",
-        "de": "Warnung!",
+        "fr": "Attention",
+        "de": "Warnung",
         "it": "Attenzione!"
     },
     "Not Validated": {
