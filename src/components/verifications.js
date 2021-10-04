@@ -46,18 +46,22 @@ function verifyTestCert(hcert) {
     // The credential
     let payload = hcert[1];
 
+    // The time when the sample was taken
     let timeSample = Date.parse(payload["timeSample"])
     let timeNow = Date.now()
 
+    // The test is valid for 72 hours
     let validityTime = 72*60*60*1000
 
+    // But only 48 hours if is a TAR
     if (payload["typeTest"] === "Rapid immunoassay") {
-        let validityTimeTAR = 48*60*60*1000      
+        validityTime = 48*60*60*1000      
     }
 
-    let timeUntil = timeNow + validityTime
+    // The time until the test is valid
+    let timeUntil = timeSample + validityTime
 
-    if (timeUntil > timeSample) {
+    if (timeNow > timeUntil) {
         return "Certificate is expired."
     }
 
