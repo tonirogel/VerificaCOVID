@@ -299,9 +299,9 @@ var initialScreenHTML = `
 
     <div class="padding-16 center">
 
-        <button class="btn color-primary hover-color-primary
+        <p class="color-primary hover-color-primary
             xlarge round-xlarge">
-            ${T("Pàgina pendent\nd'aprovació administrativa")}</button>
+            ${T("Pàgina pendent\nd'aprovació administrativa")}</p>
 
     </div>
 </div>
