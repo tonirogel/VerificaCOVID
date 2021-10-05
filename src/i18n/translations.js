@@ -53,7 +53,7 @@ export var translations = {
         "it": "Lingua"
     },
     "Update public keys": {
-        "es": "Actualizar llaves públicas",
+        "es": "Actualizar claves públicas",
         "ca": "Actualitza claus públiques",
         "fr": "Mise à jour des clés publiques",
         "de": "Öffentliche Schlüssel aktualisieren",
@@ -117,7 +117,7 @@ export var translations = {
         "it": "Fare click su Accetta per aggiornare la pagina."
     },
     "Verification keys updated": {
-        "es": "LLaves de verificación actualizadas",
+        "es": "Claves de verificación actualizadas",
         "ca": "Claus de verificació actualitzades",
         "fr": "Clés de vérification mises à jour",
         "de": "Verifizierungsschlüssel aktualisiert",
@@ -152,7 +152,7 @@ export var translations = {
     },
     "$warningmsg": {
         "en": "The certificate is not valid for travel, even if it is correctly signed with a PRE key.",
-        "es": "El certificado no es válido para viajar, aunque está correctamente firmado con una llave de PRE.",
+        "es": "El certificado no es válido para viajar, aunque está correctamente firmado con una clave de PRE.",
         "ca": "El certificat no és vàlid per viatjar tot i que està correctament signat amb una clau de PRE.",
         "fr": "Le certificat n'est pas valable pour voyager, même s'il est signé en bonne et due forme avec une clé pré-partagée.",
         "de": "Das Zertifikat ist für Reisen ungültig, auch wenn es korrekt mit einem PRE-Schlüssel signiert ist.",
