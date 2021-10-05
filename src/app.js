@@ -278,19 +278,33 @@ function initialScreen() {
     // </div>
     // `;
 
-    var initialScreenHTML = `
-        <div class="sect-white">
-            <h2 class="margin-bottom" style="word-break:break-word">${T("EU Digital COVID Credential Verifier")}</h2>
-            <p>${T("$intro01")}</p>
+//     var initialScreenHTML = `
+//         <div class="sect-white">
+//             <h2 class="margin-bottom" style="word-break:break-word">${T("EU Digital COVID Credential Verifier")}</h2>
+//             <p>${T("$intro01")}</p>
 
-            <div class="padding-16 center">
+//             <div class="padding-16 center">
 
-                <button onclick='gotoPage("verifier")' class="btn color-primary hover-color-primary
-                    xlarge round-xlarge">
-                    ${T("Start verifying")}</button>
+//                 <button onclick='gotoPage("verifier")' class="btn color-primary hover-color-primary
+//                     xlarge round-xlarge">
+//                     ${T("Start verifying")}</button>
 
-            </div>
-        </div>
+//             </div>
+//         </div>
+// `;
+var initialScreenHTML = `
+<div class="sect-white">
+    <h2 class="margin-bottom" style="word-break:break-word">${T("EU Digital COVID Credential Verifier")}</h2>
+    <p>${T("$intro01")}</p>
+
+    <div class="padding-16 center">
+
+        <button class="btn color-primary hover-color-primary
+            xlarge round-xlarge">
+            ${T("Pàgina pendent d'aprovació administrativa")}</button>
+
+    </div>
+</div>
 `;
 
     document.getElementById('intro').innerHTML = initialScreenHTML
