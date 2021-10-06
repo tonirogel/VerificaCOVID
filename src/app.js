@@ -170,17 +170,7 @@ window.resetAndGoHome = resetAndGoHome
 window.reloadPublickeys = reloadPublickeys
 
 function initialHeader() {
-    // var initialHeader = `
-    // <div class="bar xlarge color-primary">
-    //     <img style="padding:15px" onclick="resetAndGoHome()" href="javascript:void(0)" src=${logo} height="35px" alt="">
-    //     <a href="javascript:void(0)" onclick="toggleMenu()" class="bar-item btn-menu right">&#9776;</a>
-    // </div>
 
-    // <div class="w3-bar-block xlarge color-primary hide" id="mobileMenu">
-    //     <a onclick='reloadPublickeys()' href="javascript:void(0)" class="w3-bar-item w3-large btn-menu">${T("Update public keys")}</a>
-    //     <a onclick='gotoPage("selectLanguage")' href="javascript:void(0)" class="w3-bar-item w3-large btn-menu">${T("Language")}</a>
-    // </div>
-    // `
     var initialHeader = `
     <div class="bar xlarge color-primary">
         <div class="bar-item" onclick="resetAndGoHome()" style="color: white;padding:10px">VerificaCOVID.gencat.cat</div>
@@ -198,114 +188,38 @@ function initialHeader() {
 window.initialHeader = initialHeader
 
 function initialScreen() {
-    // var initialScreenHTML = `
-
-    // <div class="sect-white">
-    //     <h2 class="margin-bottom" style="word-break:break-word">${T("EU Digital COVID Credential Verifier")}</h2>
-    //     <p>${T("$intro01")}</p>
-
-    //     <div class="padding-16 center">
-
-    //         <button onclick='gotoPage("verifier")' class="btn color-primary hover-color-primary
-    //             xlarge round-xlarge">
-    //             ${T("Start verifying")}</button>
-
-    //     </div>
-    // </div>
-
-    // <div class="sect-green">
-    //     <h2 class="fw-8 mb-32">${T("Easy & Secure")}</h2>
-
-    //     <div class="row mb-16">
-    //         <div class="third mb-16">
-    //             <img src=${shield} style="height:70px" alt="">
-    //             <h2>${T("We don't save data")}</h2>
-    //         </div>
-    //         <div class="third mb-16">
-    //             <img src=${cloud} style="height:70px" alt="">
-    //             <h2>${T("No installs")}</h2>
-    //         </div>
-    //         <div class="third">
-    //             <img src=${freeofcookie} style="height:70px" alt="">
-    //             <h2>${T("Free of cookies")}</h2>
-    //         </div>
-    //     </div>
-
-    //     <div>
-    //         <img src=${v_hand} style="height:70px" alt="" />
-    //     </div>
-    //     <div>
-    //         <button onclick='gotoPage("verifier")' class="btn color-primary hover-color-primary
-    //             xlarge round-xlarge">
-    //             ${T("Start verifying")}</button>
-
-    //     </div>
-
-    // </div>
-
-    // <div class="sect-dark">
-    //     <div class="margin-bottom">
-    //         ${T("$callus")}
-    //     </div>
-    //     <div>
-    //         <a href="mailto:government@evidenceledger.eu">Send Email as Government</a>
-    //     </div>
-    //     <div>
-    //         <a href="mailto:enterprise@evidenceledger.eu">Send Email as Enterprise</a>
-    //     </div>
-
-
-    //     <div>
-    //         <img src=${fight_covid} style="height:70px" alt="" />
-    //     </div>
-    //     <div>
-    //         <a onclick='gotoPage("termsOfUse")' href="javascript:void(0)">
-    //         ${T("Terms & Conditions")}
-    //         </a>
-    //     </div>
-    //     <div>
-    //         <a onclick='gotoPage("privacyPolicy")' href="javascript:void(0)">
-    //         ${T("Privacy policy")}
-    //         </a>
-    //     </div>
-    //     <div>
-    //         <p style="font-weight:600">*${T("This website does not use cookies")}</p>
-    //     </div>
-    //     <div>
-    //         <p class="fore-primary">Evidence Ledger 2021</p>
-    //     </div>
-
-    // </div>
-    // `;
-
-//     var initialScreenHTML = `
-//         <div class="sect-white">
-//             <h2 class="margin-bottom" style="word-break:break-word">${T("EU Digital COVID Credential Verifier")}</h2>
-//             <p>${T("$intro01")}</p>
-
-//             <div class="padding-16 center">
-
-//                 <button onclick='gotoPage("verifier")' class="btn color-primary hover-color-primary
-//                     xlarge round-xlarge">
-//                     ${T("Start verifying")}</button>
-
-//             </div>
-//         </div>
-// `;
-var initialScreenHTML = `
-<div class="sect-white">
-    <h2 class="margin-bottom" style="word-break:break-word">${T("EU Digital COVID Credential Verifier")}</h2>
-    <p>${T("$intro01")}</p>
-
-    <div class="padding-16 center">
-
-        <p class="color-primary hover-color-primary
-            xlarge round-xlarge">
-            ${T("Pàgina pendent\nd'aprovació administrativa")}</p>
-
-    </div>
-</div>
-`;
+    if (location.hostname == "verificacovid.gencat.cat") {
+        var initialScreenHTML = `
+        <div class="sect-white">
+            <h2 class="margin-bottom" style="word-break:break-word">${T("EU Digital COVID Credential Verifier")}</h2>
+            <p>${T("$intro01")}</p>
+    
+            <div class="padding-16 center">
+    
+                <p class="color-primary hover-color-primary
+                    xlarge round-xlarge">
+                    ${T("Pàgina pendent\nd'aprovació administrativa")}</p>
+    
+            </div>
+        </div>
+        `;    
+    } else {
+        var initialScreenHTML = `
+        <div class="sect-white">
+            <h2 class="margin-bottom" style="word-break:break-word">${T("EU Digital COVID Credential Verifier")}</h2>
+            <p>${T("$intro01")}</p>
+    
+            <div class="padding-16 center">
+    
+                <button onclick='gotoPage("verifier")' class="btn color-primary hover-color-primary
+                    xlarge round-xlarge">
+                    ${T("Start verifying")}</button>
+    
+            </div>
+        </div>
+        `;
+    
+    }
 
     document.getElementById('intro').innerHTML = initialScreenHTML
 }
@@ -335,6 +249,7 @@ import ukRawKeys from "./json/uk_jwk_keys.json"
 // Set the initial value of the EU Trusted List, to be refreshed later
 var eu_trusted_keys = eu_jwk_keys
 
+// This function refreshes the EU trusted list
 export async function refreshTrustedKeys() {
     let response = await fetch("./eu_jwk_keys.json")
     if (!response.ok) {
@@ -448,61 +363,9 @@ function getPlatformOS() {
   }
   console.log(getPlatformOS())
 
-
-const backCameraKeywords = [
-    "rear",
-    "back",
-    "rück",
-    "arrière",
-    "trasera",
-    "trás",
-    "traseira",
-    "posteriore",
-    "posterior",
-    "后面",
-    "後面",
-    "背面",
-    "后置",
-    "後置",
-    "背置",
-    "задней",
-    "الخلفية",
-    "후",
-    "arka",
-    "achterzijde",
-    "หลัง",
-    "baksidan",
-    "bagside",
-    "sau",
-    "bak",
-    "tylny",
-    "takakamera",
-    "belakang",
-    "אחורית",
-    "πίσω",
-    "spate",
-    "hátsó",
-    "zadní",
-    "darrere",
-    "zadná",
-    "задня",
-    "stražnja",
-    "belakang",
-    "बैक",
-];
-
-function isBackCameraLabel(label) {
-    const lowercaseLabel = label.toLowerCase();
-    return backCameraKeywords.some((keyword) => {
-        return lowercaseLabel.includes(keyword);
-    });
-}
-
 window.defaultPreferredCamera = undefined
 window.selectedCamera = undefined
 window.videoDevices = []
-window.frontCameras = []
-window.backCameras = []
 
 async function getVideoDevices() {
 
@@ -547,13 +410,6 @@ async function getVideoDevices() {
         }
     }
 
-    // window.frontCameras = window.videoDevices.filter((device) => {
-    //     return !isBackCameraLabel(device.label)
-    // });
-    // window.backCameras = window.videoDevices.filter((device) => {
-    //     return isBackCameraLabel(device.label)
-    // });
-
 }
 window.getVideoDevices = getVideoDevices
 
@@ -575,18 +431,6 @@ async function getPreferredVideoDevice() {
         return undefined
     }
     return window.defaultPreferredCamera
-
-    // if (window.backCameras.length > 0) {
-    //     // Back cameras are ordered in inverse order of priority
-    //     // Get the last back camera
-    //     return window.backCameras[window.backCameras.length - 1]
-    // } else if (window.frontCameras.length > 0) {
-    //     // Front cameras are ordered by priority
-    //     // Get the first front camera
-    //     return window.frontCameras[0]
-    // } else {
-    //     return undefined
-    // }
 
 }
 window.getPreferredVideoDevice = getPreferredVideoDevice
