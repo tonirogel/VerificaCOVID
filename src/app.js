@@ -188,8 +188,9 @@ function initialHeader() {
 window.initialHeader = initialHeader
 
 function initialScreen() {
+    var initialScreenHTML;
     if (location.hostname == "verificacovid.gencat.cat") {
-        var initialScreenHTML = `
+        initialScreenHTML = `
         <div class="sect-white">
             <h2 class="margin-bottom" style="word-break:break-word">${T("EU Digital COVID Credential Verifier")}</h2>
             <p>${T("$intro01")}</p>
@@ -204,7 +205,7 @@ function initialScreen() {
         </div>
         `;    
     } else {
-        var initialScreenHTML = `
+        initialScreenHTML = `
         <div class="sect-white">
             <h2 class="margin-bottom" style="word-break:break-word">${T("EU Digital COVID Credential Verifier")}</h2>
             <p>${T("$intro01")}</p>
