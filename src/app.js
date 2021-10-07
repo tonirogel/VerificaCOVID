@@ -187,6 +187,7 @@ function initialHeader() {
 }
 window.initialHeader = initialHeader
 
+// Initial screen
 function initialScreen() {
     var initialScreenHTML;
         initialScreenHTML = `
