@@ -45,6 +45,13 @@ export var translations = {
     "This website does not use cookies": {
         "es": "Este sitio web no usa cookies"
     },
+    "Camera": {
+        "es": "Cámara",
+        "ca": "Càmera",
+        "fr": "Caméra",
+        "de": "Kamera",
+        "it": "Camera"
+    },
     "Language": {
         "es": "Idioma",
         "ca": "Idioma",
@@ -133,11 +140,16 @@ export var translations = {
     "Certificate is expired.": {
         "es": "El certificado está expirado.",
         "ca": "El certificat ha caducat.",
+        "fr": "Le certificat a expiré",
+        "de": "Zertifikat ist abgelaufen",
+        "it": "Il certificato è scaduto"
     },
     "Vaccination not completed.": {
         "es": "Pauta de vacunación no completada.",
         "ca": "El calendari de vacunació no s'ha completat.",
-        "fr": "La vaccination n'est pas complete."
+        "fr": "La vaccination n'est pas complete.",
+        "de": "Impfung nicht abgeschlossen",
+        "it": "Vaccinazione non completata"
     },
     "Certificate is not yet valid as vaccination is too recent.": {
         "es": "Certificado no válido porque la vacunación es demasiado reciente.",
