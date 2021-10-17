@@ -24,7 +24,6 @@ export class DisplayHcert extends AbstractPage {
         // let qrContent = pageData.text
         let hcert = undefined
         let verified = false
-        let thehtml = ""
 
         // Decode credential verifying it at the same time
         try {
@@ -64,6 +63,7 @@ export class DisplayHcert extends AbstractPage {
 
         console.log(verification)
 
+        let thehtml = ""
         try {
             // Render the credential
             thehtml = this.renderDetail(hcert, verification);
@@ -75,9 +75,8 @@ export class DisplayHcert extends AbstractPage {
 
         let fullPage = html`
         ${thehtml}
-        <div class="sect-white">
-            <button @click=${()=> gotoPage("verifier")} class="w3-button btn-color-primary btn-hover-color-primary
-            w3-xlarge w3-round-xlarge">
+        <div class="text-center">
+            <button @click=${()=> gotoPage("verifier")} class="btn">
             ${T("Verify another")}</button>
         </div>
         `
@@ -100,40 +99,41 @@ export class DisplayHcert extends AbstractPage {
 
         let title = "Validated"
         let image = ok_image
-        let color = "bkg-success"
+        let color = "background-color: #04FF00"
 
         if (verification.result === "WARNING") {
             title = "Warning"
             image = warning_image
-            color = "bkg-warning"
+            color = "background-color: yellow"
         } else if (verification.result === "ERROR") {
             title = "Not Validated"
             image = error_image
-            color = "bkg-error"
+            color = "background-color: orangered"
         }
 
         let thehtml = html`
 
-            <div class="container">
-
-                <div id="hcertWarning" class="w3-panel ${color}">
-                    <img src=${image}  alt="">
-                    <h3>${T(title)}</h3>
-                    <p>${verification.message}</p>
-                </div>
-
-                <div class="section">
-                    <div class="subsection">
-                        <div class="etiqueta">${T("Surname and forename")}</div>
-                        <div class="valor h4">${payload.fullName}</div>
-                    </div>
-                    <div class="subsection">
-                        <div class="etiqueta">${T("Date of birth")}</div>
-                        <div class="valor h4">${payload.dateOfBirth}</div>
+            <div id="hcertWarning" class="px-6" style="${color}">
+                <div class="flex items-center">
+                    <div class="mx-auto">
+                        <img class="inline-block" src=${image}  alt="">
+                        <span class="text-lg font-semibold pl-4">${T(title)}</span>
                     </div>
                 </div>
-           
+                <div class="text-center">${verification.message}</div>
             </div>
+
+            <div class="text-center my-6">
+                <div class="mb-3">
+                    <div>${T("Surname and forename")}</div>
+                    <div class="text-lg font-semibold">${payload.fullName}</div>
+                </div>
+                <div>
+                    <div>${T("Date of birth")}</div>
+                    <div class="text-lg font-semibold">${payload.dateOfBirth}</div>
+                </div>
+            </div>
+           
         `;
     
         return thehtml;

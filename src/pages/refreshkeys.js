@@ -16,21 +16,17 @@ export class RefreshKeys extends AbstractPage {
         window.refreshTrustedKeys()
 
         let theHtml = html`
-        <div class="container">
-            <div class="w3-card-4 w3-center" style="margin-top:100px;">
+            <div class="mt-10 mx-6 pb-4 rounded-md shadow-lg">
         
-                <header class="w3-container color-primary" style="padding:10px">
-                    <h1>${T("Verification keys updated")}</h1>
-                </header>
+                <div class="px-6 py-4">
+                    <h1 class="text-xl text-center">${T("Verification keys updated")}</h1>
+                </div>
                 
-                <div class="w3-padding-16">
-        
-                    <button @click=${()=>this.acceptedButton()} class="w3-button btn-color-primary btn-hover-color-primary w3-xlarge w3-round-xlarge">${T("Accept")}</button>
-        
+                <div class="text-center">
+                    <button @click=${()=>this.acceptedButton()} class="btn">${T("Accept")}</button>        
                 </div>
         
             </div>
-        </div>
         `
 
         this.render(theHtml)

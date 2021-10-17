@@ -18,53 +18,38 @@ export class SelectLanguage extends AbstractPage {
         console.log("Select language")
 
         let theHtml = html`
-<div class="w3-container" style="padding:10px 0px;">
+<div class="px-6 pt-6">
 
-    <ul class="w3-ul w3-card-4">
+    <div class="flex rounded-md shadow-lg pl-2 py-4 mb-1 border-2" @click=${()=>this.selectLang("en")}>
+        <img src=${ukflag}>
+        <span class="text-lg font-semibold pl-4">English</span>
+    </div>
 
-        <li class="w3-bar" @click=${()=>this.selectLang("en")}>
-            <div class="w3-bar-item" style="padding:8px;">
-                <img src=${ukflag} style="padding:8px;width:70px">
-                <span class="h3" style="vertical-align:middle;">English</span>
-            </div>
-        </li>
+    <div class="flex rounded-md shadow-lg pl-2 py-4 mb-1 border-2" @click=${()=>this.selectLang("ca")}>
+        <img src=${caflag}>
+        <span class="text-lg font-semibold pl-4">Català</span>
+    </div>
 
-        <li class="w3-bar" @click=${()=>this.selectLang("ca")}>
-            <div class="w3-bar-item" style="padding:8px;">
-                <img src=${caflag} style="padding:8px;width:70px">
-                <span class="h3" style="vertical-align:middle;">Català</span>
-            </div>
-        </li>
+    <div class="flex rounded-md shadow-lg pl-2 py-4 mb-1 border-2" @click=${()=>this.selectLang("es")}>
+        <img src=${esflag}>
+        <span class="text-lg font-semibold pl-4">Español</span>
+    </div>
 
-        <li class="w3-bar" @click=${()=>this.selectLang("es")}>
-            <div class="w3-bar-item" style="padding:8px;">
-                <img src=${esflag} style="padding:8px;width:70px">
-                <span class="h3" style="vertical-align:middle;">Español</span>
-            </div>
-        </li>
+    <div class="flex rounded-md shadow-lg pl-2 py-4 mb-1 border-2" @click=${()=>this.selectLang("fr")}>
+        <img src=${frflag}>
+        <span class="text-lg font-semibold pl-4">Français</span>
+    </div>
 
-        <li class="w3-bar" @click=${()=>this.selectLang("fr")}>
-            <div class="w3-bar-item" style="padding:8px;">
-                <img src=${frflag} style="padding:8px;width:70px">
-                <span class="h3" style="vertical-align:middle;">Français</span>
-            </div>
-        </li>
+    <div class="flex rounded-md shadow-lg pl-2 py-4 mb-1 border-2" @click=${()=>this.selectLang("de")}>
+        <img src=${deflag}>
+        <span class="text-lg font-semibold pl-4">Deutsch</span>
+    </div>
 
-        <li class="w3-bar" @click=${()=>this.selectLang("de")}>
-            <div class="w3-bar-item" style="padding:8px;">
-                <img src=${deflag} style="padding:8px;width:70px">
-                <span class="h3" style="vertical-align:middle;">Deutsch</span>
-            </div>
-        </li>
-
-        <li class="w3-bar" @click=${()=>this.selectLang("it")}>
-            <div class="w3-bar-item" style="padding:8px;">
-                <img src=${itflag} style="padding:8px;width:70px">
-                <span class="h3" style="vertical-align:middle;">Italiano</span>
-            </div>
-        </li>
-
-    </ul>
+    <div class="flex rounded-md shadow-lg pl-2 py-4 mb-1 border-2" @click=${()=>this.selectLang("it")}>
+        <img src=${itflag}>
+        <span class="text-lg font-semibold pl-4">Italiano</span>
+    </div>
+    
 </div>
 `
         this.render(theHtml)

@@ -15,27 +15,22 @@ export class SWNotify extends AbstractPage {
         console.log("SWNOTIFY: enter page")
 
         let theHtml = html`
-        <div class="container">
-            <div class="w3-card-4 w3-center" style="margin-top:100px;">
-        
-                <header class="w3-container color-primary" style="padding:10px">
-                    <h1>${T("Application updated")}</h1>
-                </header>
-        
-                <div class="w3-container w3-padding-16">
-                    <p>${T("There is a new version of the application and it has already been updated.")}</p>
-                    <p>${T("Please click Accept to refresh the page.")}</p>
-                </div>
-        
-                <div class="w3-padding-16">
-        
-                    <button @click=${()=>gotoPage("spinner")} class="w3-button btn-color-primary btn-hover-color-primary w3-xlarge w3-round-xlarge">${T("Accept")}</button>
-        
-                </div>
-        
+        <div class="mt-10 mx-6 pb-4 rounded-md shadow-lg">
+    
+            <div class="px-6 py-4">
+                <div class="text-xl font-semibold mb-2 text-center">${T("Application updated")}</div>
+
+                <p class="text text-center">${T("There is a new version of the application and it has already been updated.")}</p>
+                <p class="text-center">${T("Please click Accept to refresh the page.")}</p>
+                
             </div>
+            
+            <div class="text-center">
+                <button @click=${()=>gotoPage("spinner")} class="btn">${T("Accept")}</button>        
+            </div>
+    
         </div>
-        `
+    `
 
         this.render(theHtml)
     }
