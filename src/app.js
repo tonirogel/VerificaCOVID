@@ -1,3 +1,11 @@
+// Get the build date of the application
+import buildDate from './version.txt?raw'
+
+// Store version in global Window object and in local storage
+window.appVersion = buildDate
+window.localStorage.setItem("VERSION", appVersion)
+console.log("Version:", appVersion)
+
 import { log } from "./log";
 
 // **************************************
@@ -426,22 +434,6 @@ document.addEventListener('DOMContentLoaded', async (event) => {
     // Get the best camera for QR scanning
     getPreferredVideoDevice()
 
-    try {
-        // Get the version of the application
-        let response = await fetch("/VERSION.txt");
-        if (response.ok) {
-            let newVersion = await response.text()
-            console.log(`Application version ${newVersion}`)
-            if (newVersion) {
-                window.localStorage.setItem("VERSION", newVersion)
-            }    
-        } else {
-            console.log("ERROR getting version", response.status)
-        }
-    } catch (error) {
-        console.log("ERROR updating version", error)
-    }
-
 });
 
 
@@ -540,22 +532,6 @@ window.addEventListener('load', async (event) => {
 // This means that a new version of the application has been installed
 async function performAppUpgrade() {
     console.log("Performing Upgrade");
-
-    try {
-        // Get the new version of the application
-        let response = await fetch("/VERSION.txt");
-        if (response.ok) {
-            let newVersion = await response.text()
-            console.log(`Upgrading application to version ${newVersion}`)
-            if (newVersion) {
-                window.localStorage.setItem("VERSION", newVersion)
-            }    
-        } else {
-            console.log("ERROR updating version", response.status)
-        }
-    } catch (error) {
-        console.log("ERROR updating version", error)
-    }
 
     // Notify the user and ask to refresh the application
     gotoPage("swnotify")
