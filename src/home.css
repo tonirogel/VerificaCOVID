@@ -4,6 +4,6 @@
 
 @layer components {
     .btn {
-    @apply py-3 px-4 bg-gray-gene text-white font-semibold rounded-lg shadow-md;
+    @apply py-3 px-4 bg-gray-gene text-lg text-white font-semibold rounded-lg shadow-md;
     }
 }
