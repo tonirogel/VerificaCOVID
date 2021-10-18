@@ -28,12 +28,14 @@ export class SelectCamera extends AbstractPage {
             ${window.videoDevices.map((camera) =>
 
                 html`
-                <li class="bar" @click=${()=>this.setCamera(camera.deviceId)}>
-                    <div class="bar-item" style="padding:8px;">
-                        <div class="h5" style="vertical-align:middle;">${camera.label}</div>
-                    </div>
+                <li class="bar">
+                    <a @click=${()=>this.setCamera(camera.deviceId)} href="javascript:void(0)">
+                        <div class="bar-item" style="padding:8px;">
+                            <div class="h5" style="vertical-align:middle;">${camera.label}</div>
+                        </div>
+                    </a>
                 </li>`
-            
+                
                 )}
             </ul>
 

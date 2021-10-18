@@ -182,13 +182,13 @@ function initialHeader() {
     var initialHeader = `
     <div class="bar xlarge color-primary">
         <div class="bar-item" onclick="resetAndGoHome()" style="color: white;padding:10px">VerificaCOVID.gencat.cat</div>
-        <a href="javascript:void(0)" onclick="toggleMenu()" class="bar-item btn-menu right">&#9776;</a>
+        <a href="javascript:void(0)" onclick="toggleMenu()" class="bar-item btn-menu right focus-visible-only">&#9776;</a>
     </div>
 
     <div class="w3-bar-block xlarge color-primary hide" id="mobileMenu">
-        <a onclick='gotoPage("refreshKeys")' href="javascript:void(0)" class="w3-bar-item w3-large btn-menu">${T("Update public keys")}</a>
-        <a onclick='gotoPage("selectLanguage")' href="javascript:void(0)" class="w3-bar-item w3-large btn-menu">${T("Language")}</a>
-        <a onclick='gotoPage("selectCamera")' href="javascript:void(0)" class="w3-bar-item w3-large btn-menu">${T("Camera")}</a>
+        <a onclick='gotoPage("refreshKeys")' href="javascript:void(0)" class="w3-bar-item w3-large btn-menu focus-visible-only">${T("Update public keys")}</a>
+        <a onclick='gotoPage("selectLanguage")' href="javascript:void(0)" class="w3-bar-item w3-large btn-menu focus-visible-only">${T("Language")}</a>
+        <a onclick='gotoPage("selectCamera")' href="javascript:void(0)" class="w3-bar-item w3-large btn-menu focus-visible-only">${T("Camera")}</a>
     </div>
     `
     document.querySelector('header').innerHTML = initialHeader
@@ -206,7 +206,7 @@ function initialScreen() {
             <div class="padding-16 center">
     
                 <button onclick='gotoPage("verifier")' class="btn color-primary hover-color-primary
-                    xlarge round-xlarge">
+                    xlarge round-xlarge focus-visible-only">
                     ${T("Start verifying")}</button>
     
             </div>
