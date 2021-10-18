@@ -211,7 +211,7 @@ function initialScreen() {
                 ${T("EU Digital COVID Credential Verifier")}
             </h2>
 
-            <p class="px-2 leading-5">${T("$intro01")}</p>
+            <p class="px-2 text-base">${T("$intro01")}</p>
     
             <button onclick='gotoPage("verifier")' class="btn mt-6">
                 ${T("Start verifying")}</button>    
