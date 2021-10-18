@@ -205,9 +205,13 @@ window.initialHeader = initialHeader
 function initialScreen() {
     var initialScreenHTML;
         initialScreenHTML = `
-        <div class="pt-4 text-center">
-            <h2 class="px-4 text-2xl md:text-3xl font-semibold text-center" style="word-break:break-word">${T("EU Digital COVID Credential Verifier")}</h2>
-            <p class="px-6">${T("$intro01")}</p>
+        <div class="pt-4 px-4 text-center">
+
+            <h2 class="break-words mb-2 text-2xl md:text-3xl font-semibold text-center">
+                ${T("EU Digital COVID Credential Verifier")}
+            </h2>
+
+            <p class="px-2 leading-5">${T("$intro01")}</p>
     
             <button onclick='gotoPage("verifier")' class="btn mt-6">
                 ${T("Start verifying")}</button>    
