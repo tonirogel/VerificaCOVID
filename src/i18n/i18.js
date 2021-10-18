@@ -22,46 +22,58 @@ export class SelectLanguage extends AbstractPage {
 
     <ul class="w3-ul w3-card-4">
 
-        <li class="w3-bar" @click=${()=>this.selectLang("en")}>
-            <div class="w3-bar-item" style="padding:8px;">
-                <img src=${ukflag} style="padding:8px;width:70px">
-                <span class="h3" style="vertical-align:middle;">English</span>
-            </div>
+        <li> 
+            <a class="w3-bar focus-visible-only" @click=${()=>this.selectLang("en")} href="javascript:void(0)">
+                <div class="w3-bar-item" style="padding:8px;">
+                    <img src=${ukflag} style="padding:8px;width:70px">
+                    <span class="h3" style="vertical-align:middle;">English</span>
+                </div>
+            </a>
         </li>
 
-        <li class="w3-bar" @click=${()=>this.selectLang("ca")}>
-            <div class="w3-bar-item" style="padding:8px;">
-                <img src=${caflag} style="padding:8px;width:70px">
-                <span class="h3" style="vertical-align:middle;">Català</span>
-            </div>
+        <li> 
+            <a class="w3-bar focus-visible-only" @click=${()=>this.selectLang("ca")} href="javascript:void(0)">
+                <div class="w3-bar-item" style="padding:8px;">
+                    <img src=${caflag} style="padding:8px;width:70px">
+                    <span class="h3" style="vertical-align:middle;">Català</span>
+                </div>
+            </a>
         </li>
 
-        <li class="w3-bar" @click=${()=>this.selectLang("es")}>
-            <div class="w3-bar-item" style="padding:8px;">
-                <img src=${esflag} style="padding:8px;width:70px">
-                <span class="h3" style="vertical-align:middle;">Español</span>
-            </div>
+        <li>
+            <a class="w3-bar focus-visible-only" @click=${()=>this.selectLang("es")} href="javascript:void(0)">
+                <div class="w3-bar-item" style="padding:8px;">
+                    <img src=${esflag} style="padding:8px;width:70px">
+                    <span class="h3" style="vertical-align:middle;">Español</span>
+                </div>
+            </a>
         </li>
 
-        <li class="w3-bar" @click=${()=>this.selectLang("fr")}>
-            <div class="w3-bar-item" style="padding:8px;">
-                <img src=${frflag} style="padding:8px;width:70px">
-                <span class="h3" style="vertical-align:middle;">Français</span>
-            </div>
+        <li>
+            <a class="w3-bar focus-visible-only" @click=${()=>this.selectLang("fr")} href="javascript:void(0)">
+                <div class="w3-bar-item" style="padding:8px;">
+                    <img src=${frflag} style="padding:8px;width:70px">
+                    <span class="h3" style="vertical-align:middle;">Français</span>
+                </div>
+            </a>
         </li>
 
-        <li class="w3-bar" @click=${()=>this.selectLang("de")}>
-            <div class="w3-bar-item" style="padding:8px;">
-                <img src=${deflag} style="padding:8px;width:70px">
-                <span class="h3" style="vertical-align:middle;">Deutsch</span>
-            </div>
+        <li>
+            <a class="w3-bar focus-visible-only" @click=${()=>this.selectLang("de")} href="javascript:void(0)">
+                <div class="w3-bar-item" style="padding:8px;">
+                    <img src=${deflag} style="padding:8px;width:70px">
+                    <span class="h3" style="vertical-align:middle;">Deutsch</span>
+                </div>
+            </a>
         </li>
 
-        <li class="w3-bar" @click=${()=>this.selectLang("it")}>
-            <div class="w3-bar-item" style="padding:8px;">
-                <img src=${itflag} style="padding:8px;width:70px">
-                <span class="h3" style="vertical-align:middle;">Italiano</span>
-            </div>
+        <li>
+            <a class="w3-bar focus-visible-only" @click=${()=>this.selectLang("it")} href="javascript:void(0)">
+                <div class="w3-bar-item" style="padding:8px;">
+                    <img src=${itflag} style="padding:8px;width:70px">
+                    <span class="h3" style="vertical-align:middle;">Italiano</span>
+                </div>
+            </a>
         </li>
 
     </ul>
