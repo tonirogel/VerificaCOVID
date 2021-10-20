@@ -73,8 +73,15 @@ function verifyRecoveryCert(hcert) {
     let payload = hcert[1];
 
     let dateUntil = Date.parse(payload["dateUntil"])
+
+    // The test is also valid the day that expires
+    let validityTime = 24*60*60*1000
+
+    //The time until the test is valid
+    let timeUntil = dateUntil + validityTime
+
     let dateNow = Date.now()
-    if (dateNow > dateUntil) {
+    if (dateNow > timeUntil) {
         return "Certificate is expired."
     }
 
