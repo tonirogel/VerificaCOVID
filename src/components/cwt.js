@@ -60,6 +60,8 @@ class DGCKey {
     static async fromJWK(jwk) {
         // Create a CryptoKey from JWK format
 
+        // Fix the "use" field for malformed keys from Sweden
+        jwk["use"] = "sig";
         const extractable = true;
         const format = "jwk";
         const keyType = jwk["kty"];
