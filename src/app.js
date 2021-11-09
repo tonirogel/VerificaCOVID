@@ -189,6 +189,7 @@ function initialHeader() {
         <a onclick='gotoPage("refreshKeys")' href="javascript:void(0)" class="w3-bar-item w3-large btn-menu focus-visible-only">${T("Update public keys")}</a>
         <a onclick='gotoPage("selectLanguage")' href="javascript:void(0)" class="w3-bar-item w3-large btn-menu focus-visible-only">${T("Language")}</a>
         <a onclick='gotoPage("selectCamera")' href="javascript:void(0)" class="w3-bar-item w3-large btn-menu focus-visible-only">${T("Camera")}</a>
+        <a onclick='gotoPage("help")' href="javascript:void(0)" class="w3-bar-item w3-large btn-menu focus-visible-only">${T("Help")}</a>
     </div>
     `
     document.querySelector('header').innerHTML = initialHeader
