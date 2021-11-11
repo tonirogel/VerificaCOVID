@@ -314,12 +314,12 @@ export var translations = {
         "it": "Per verificare il codice QR di un certificato avrai bisogno di:"
     },
     "$help03": {
-        "es": "Permitir el acceso a la cámara cuando así lo solicite la aplicación \u0022VerificaCovid.cat\u0022",
-        "ca": "Permetre l'accés a la càmera quan així ho sol·liciti l'aplicació \u0022VerificaCovid.cat\u0022",
-        "en": "Allow access to the camera when requested by the \u0022VerificaCovid.cat\u0022 application",
-        "fr": "Autoriser l'accès à la caméra à la demande de l'application \u0022VerificaCovid.cat\u0022",
-        "de": "Erlauben Sie den Zugriff auf die Kamera, wenn Sie von der Anwendung \u0022VerificaCovid.cat\u0022 angefordert werden",
-        "it": "Consenti l'accesso alla telecamera quando richiesto dall'applicazione \u0022VerificaCovid.cat\u0022;"
+        "es": "Permitir el acceso a la cámara cuando así lo solicite la aplicación \u0022VerificaCovid.cat\u0022.",
+        "ca": "Permetre l'accés a la càmera quan així ho sol·liciti l'aplicació \u0022VerificaCovid.cat\u0022.",
+        "en": "Allow access to the camera when requested by the \u0022VerificaCovid.cat\u0022 application.",
+        "fr": "Autoriser l'accès à la caméra à la demande de l'application \u0022VerificaCovid.cat\u0022.",
+        "de": "Erlauben Sie den Zugriff auf die Kamera, wenn Sie von der Anwendung \u0022VerificaCovid.cat\u0022 angefordert werden.",
+        "it": "Consenti l'accesso alla telecamera quando richiesto dall'applicazione \u0022VerificaCovid.cat\u0022."
     },
     "$help04": {
         "es": "Acercar la cámara del dispositivo móvil aproximadamente a 6 centímetros del QR de forma que se visualice completamente, bien enfocado y centrado en la pantalla del dispositivo.",
