@@ -189,6 +189,7 @@ function initialHeader() {
         <a onclick='gotoPage("refreshKeys")' href="javascript:void(0)" class="w3-bar-item w3-large btn-menu focus-visible-only">${T("Update public keys")}</a>
         <a onclick='gotoPage("selectLanguage")' href="javascript:void(0)" class="w3-bar-item w3-large btn-menu focus-visible-only">${T("Language")}</a>
         <a onclick='gotoPage("selectCamera")' href="javascript:void(0)" class="w3-bar-item w3-large btn-menu focus-visible-only">${T("Camera")}</a>
+        <a onclick='gotoPage("faqs")' href="javascript:void(0)" class="w3-bar-item w3-large btn-menu focus-visible-only">${T("FAQS")}</a>
         <a onclick='gotoPage("help")' href="javascript:void(0)" class="w3-bar-item w3-large btn-menu focus-visible-only">${T("Help")}</a>
     </div>
     `
@@ -208,7 +209,11 @@ function initialScreen() {
     
                 <button onclick='gotoPage("verifier")' class="btn color-primary hover-color-primary
                     xlarge round-xlarge focus-visible-only">
-                    ${T("Start verifying")}</button>
+                    ${T("Start verifying")}
+                </button>
+                <br><br>
+                <a style="font-weight: bold" onclick='gotoPage("faqs")' href="javascript:void(0)">${T("Frequently asked questions (FAQS)")}</a>
+
     
             </div>
         </div>
