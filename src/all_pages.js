@@ -14,6 +14,7 @@ import { PrivacyPolicy } from './pages/privacypolicy';
 import { SelectCamera } from './pages/selectcamera';
 import { RefreshKeys } from './pages/refreshkeys'
 import { Help } from './pages/help';
+import { Faqs } from './pages/faqs';
 
 export var pageDefs = [
     {
@@ -63,6 +64,10 @@ export var pageDefs = [
     {
         name: "selectCamera",
         className: SelectCamera
+    },
+    {
+        name: "faqs",
+        className: Faqs
     },
     {
         name: "help",
