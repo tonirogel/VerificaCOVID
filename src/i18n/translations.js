@@ -457,20 +457,20 @@ export var translations = {
         "it": "-> Què passa si no funciona o el certificat és d’un altre país? "
     },
     "$faqs_answer_5": {
-        "ca":" VerificaCOVID verifica els certificats COVID emesos pels estats membres de la UE i els certificats emesos pel Regne Unit. Podeu descarregar el certificat des de La Meva Salut",
+        "ca":" VerificaCOVID verifica els certificats COVID emesos pels estats membres de la UE i els certificats emesos pel Regne Unit. Podeu descarregar el certificat des del Portal del Pacient",
         "es": "VerificaCovid verifica los certificados COVID emitidos por los estados miembros de la UE y los certificados emitidos por el Reino Unido. Podéis descargar el certificado desde La Meva Salut",
-        "en": "VerificaCOVID verifica els certificats COVID emesos pels estats membres de la UE i els certificats emesos pel Regne Unit. Podeu descarregar el certificat des de La Meva Salut",
-        "fr": "VerificaCOVID verifica els certificats COVID emesos pels estats membres de la UE i els certificats emesos pel Regne Unit. Podeu descarregar el certificat des de La Meva Salut",
-        "de": "VerificaCOVID verifica els certificats COVID emesos pels estats membres de la UE i els certificats emesos pel Regne Unit. Podeu descarregar el certificat des de La Meva Salut",
-        "it": "VerificaCOVID verifica els certificats COVID emesos pels estats membres de la UE i els certificats emesos pel Regne Unit. Podeu descarregar el certificat des de La Meva Salut"
+        "en": "VerificaCOVID verifica els certificats COVID emesos pels estats membres de la UE i els certificats emesos pel Regne Unit. Podeu descarregar el certificat des del Portal del Pacient",
+        "fr": "VerificaCOVID verifica els certificats COVID emesos pels estats membres de la UE i els certificats emesos pel Regne Unit. Podeu descarregar el certificat des del Portal del Pacient",
+        "de": "VerificaCOVID verifica els certificats COVID emesos pels estats membres de la UE i els certificats emesos pel Regne Unit. Podeu descarregar el certificat des del Portal del Pacient",
+        "it": "VerificaCOVID verifica els certificats COVID emesos pels estats membres de la UE i els certificats emesos pel Regne Unit. Podeu descarregar el certificat des del Portal del Pacient"
     },
     "$faqs_answer_5_2": {
-        "ca": "o bé podeu posar-vos en contacte amb el 061, o amb el vostre CAP.",
-        "es": "o bien podéis poneros en contacto con el 061, o con vuestro CAP",
-        "en": "o bé podeu posar-vos en contacte amb el 061, o amb el vostre CAP.",
-        "fr": "o bé podeu posar-vos en contacte amb el 061, o amb el vostre CAP.",
-        "de": "o bé podeu posar-vos en contacte amb el 061, o amb el vostre CAP.",
-        "it": "o bé podeu posar-vos en contacte amb el 061, o amb el vostre CAP."
+        "ca": ".",
+        "es": ".",
+        "en": ".",
+        "fr": ".",
+        "de": ".",
+        "it": "."
     },
     "$faqs_question_6": {
         "ca": "-> He tingut un problema amb l’aplicació. Com ho comunico? ",

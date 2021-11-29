@@ -1,8 +1,4 @@
-<<<<<<< HEAD:docs/assets/all_pages.97eb95b7.js
-var Oo=Object.defineProperty;var Do=(r,e,t)=>e in r?Oo(r,e,{enumerable:!0,configurable:!0,writable:!0,value:t}):r[e]=t;var vr=(r,e,t)=>(Do(r,typeof e!="symbol"?e+"":e,t),t);import{l as Jr}from"./index.48b472f9.js";/**
-=======
-var Oo=Object.defineProperty;var Do=(r,e,t)=>e in r?Oo(r,e,{enumerable:!0,configurable:!0,writable:!0,value:t}):r[e]=t;var vr=(r,e,t)=>(Do(r,typeof e!="symbol"?e+"":e,t),t);import{l as qr}from"./index.9b8b61a4.js";/**
->>>>>>> main:docs/assets/all_pages.ebd441c6.js
+var Oo=Object.defineProperty;var Do=(r,e,t)=>e in r?Oo(r,e,{enumerable:!0,configurable:!0,writable:!0,value:t}):r[e]=t;var vr=(r,e,t)=>(Do(r,typeof e!="symbol"?e+"":e,t),t);import{l as qr}from"./index.02d6581e.js";/**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
@@ -499,7 +495,7 @@ If the user would like to obtain more information of the Website’s Privacy Pol
                 <span id="faqsitem5" class="w3-bar focus-visible-only hide" href="javascript:void(0)">
                         <div class="w3-bar-item" style="padding:8px; vertical-align:middle;">
                             <span> ${T("$faqs_answer_5")}</span>
-                            <a href=" https://canalsalut.gencat.cat/lamevasalut" target="_blank"> https://canalsalut.gencat.cat/lamevasalut</a>
+                            <a href=" https://porpac.ibsalut.es" target="_blank">https://porpac.ibsalut.es</a>
                             <span> ${T("$faqs_answer_5_2")}</span>
                         </div>
                     </span>
