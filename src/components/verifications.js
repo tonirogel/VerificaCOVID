@@ -33,6 +33,10 @@ function verifyVaccinationCert(hcert) {
     let dateVaccination = Date.parse(payload["dateVaccination"])
     let timeValidFrom = dateVaccination + 14*24*60*60*1000
 
+    if(doseNumber > 2 && doseTotal > 2) {
+        timeValidFrom = dateVaccination
+    }
+
     let timeNow = Date.now()
 
     if (timeNow < timeValidFrom) {
