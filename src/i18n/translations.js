@@ -504,6 +504,14 @@ export var translations = {
         "de": "Actualment, segons la normativa vigent, han de passar 14 dies des de l’última dosi.",
         "it": "Actualment, segons la normativa vigent, han de passar 14 dies des de l’última dosi."
     },
+    "$faqs_answer_7_2": {
+        "ca": "Això, no obstant, no passa amb la tercera dosi (3/3), ja que des del moment que es posa la vacuna el certificat és vàlid.",
+        "es": "Esto, en cambio, no sucede con la tercera dosi (3/3), ya que desde el momento que se pone la vacuna el certificado es válido.",
+        "en": "Això, no obstant, no passa amb la tercera dosi (3/3), ja que des del moment que es posa la vacuna el certificat és vàlid.",
+        "fr": "Això, no obstant, no passa amb la tercera dosi (3/3), ja que des del moment que es posa la vacuna el certificat és vàlid.",
+        "de": "Això, no obstant, no passa amb la tercera dosi (3/3), ja que des del moment que es posa la vacuna el certificat és vàlid.",
+        "it": "Això, no obstant, no passa amb la tercera dosi (3/3), ja que des del moment que es posa la vacuna el certificat és vàlid."
+    },
     "$faqs_question_8": {
         "ca": "-> Quan valido algun QR, es guarden dades en el mòbil o s’envien dades a algun lloc? ",
         "es": "-> Cuando valido un QR, ¿se guardan datos en el móvil o se envían datos a algún sitio?",
