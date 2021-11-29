@@ -130,6 +130,8 @@ export class Faqs extends AbstractPage {
                 <span id="faqsitem7" class="w3-bar focus-visible-only hide" href="javascript:void(0)">
                         <div class="w3-bar-item" style="padding:8px; vertical-align:middle;">
                             <span> ${T("$faqs_answer_7")}</span>
+                            <br>
+                            <span> ${T("$faqs_answer_7_2")}</span>
                         </div>
                     </span>
             </ul>

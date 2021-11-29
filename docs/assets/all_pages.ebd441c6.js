@@ -1,4 +1,4 @@
-var Oo=Object.defineProperty;var Do=(r,e,t)=>e in r?Oo(r,e,{enumerable:!0,configurable:!0,writable:!0,value:t}):r[e]=t;var vr=(r,e,t)=>(Do(r,typeof e!="symbol"?e+"":e,t),t);import{l as qr}from"./index.b0ae5ae0.js";/**
+var Oo=Object.defineProperty;var Do=(r,e,t)=>e in r?Oo(r,e,{enumerable:!0,configurable:!0,writable:!0,value:t}):r[e]=t;var vr=(r,e,t)=>(Do(r,typeof e!="symbol"?e+"":e,t),t);import{l as qr}from"./index.9b8b61a4.js";/**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
@@ -529,6 +529,8 @@ If the user would like to obtain more information of the Website’s Privacy Pol
                 <span id="faqsitem7" class="w3-bar focus-visible-only hide" href="javascript:void(0)">
                         <div class="w3-bar-item" style="padding:8px; vertical-align:middle;">
                             <span> ${T("$faqs_answer_7")}</span>
+                            <br>
+                            <span> ${T("$faqs_answer_7_2")}</span>
                         </div>
                     </span>
             </ul>
