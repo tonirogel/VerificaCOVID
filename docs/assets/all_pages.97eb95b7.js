@@ -1,4 +1,4 @@
-var Oo=Object.defineProperty;var Do=(r,e,t)=>e in r?Oo(r,e,{enumerable:!0,configurable:!0,writable:!0,value:t}):r[e]=t;var vr=(r,e,t)=>(Do(r,typeof e!="symbol"?e+"":e,t),t);import{l as Jr}from"./index.4bb8ba91.js";/**
+var Oo=Object.defineProperty;var Do=(r,e,t)=>e in r?Oo(r,e,{enumerable:!0,configurable:!0,writable:!0,value:t}):r[e]=t;var vr=(r,e,t)=>(Do(r,typeof e!="symbol"?e+"":e,t),t);import{l as Jr}from"./index.48b472f9.js";/**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
@@ -412,9 +412,7 @@ If the user would like to obtain more information of the Website’s Privacy Pol
                 <div style="padding-left: 20px;">
                     <p style="margin-bottom: 10px;">${T("$help07")}</p>
                     <p style="margin-bottom: 10px;">${T("$help08")}</p>
-                    <p>${T("$help09")} <a href="https://canalsalut.gencat.cat/ca/salut-a-z/c/coronavirus-2019-ncov/ciutadania/certificat-covid-digital-ue/" rel="noopener noreferrer" target="_blank">https://canalsalut.gencat.cat/ca/salut-a-z/c/coronavirus-2019-ncov/ciutadania/certificat-covid-digital-ue/</a></p>&nbsp
                 </div>
             </div>
-            <p style="margin-bottom: 40px">${T("$help10")}<a href="mailto:verificacovid.salut@gencat.cat">verificacovid.salut@gencat.cat</a></p>
         </div>
         `;this.render(e)}}var xl=[{name:"intro",className:tl},{name:"displayhcert",className:Ms},{name:"demo",className:ks},{name:"verifier",className:Ku},{name:"swnotify",className:el},{name:"spinner",className:rl},{name:"page404",className:Us},{name:"displayNormalQR",className:nl},{name:"selectLanguage",className:ul},{name:"termsOfUse",className:ll},{name:"privacyPolicy",className:hl},{name:"selectCamera",className:dl},{name:"help",className:pl},{name:"refreshKeys",className:vl}];export{xl as pageDefs};

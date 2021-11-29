@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "vite": "^2.5.4",
-    "workbox-cli": "^6.3.0"
+    "workbox-cli": "^6.4.1"
   },
   "dependencies": {
     "@zxing/browser": "^0.0.9",
