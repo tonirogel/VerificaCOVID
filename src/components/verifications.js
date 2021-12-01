@@ -1,10 +1,11 @@
 const CERT_OK = true
 const INV_CERT_TYPE = "Invalid certificate type"
 
-
 export function checkRevokedCerts(hcert) {
     // The credential
     let payload = hcert[1];
+
+
 
     if (payload["uniqueIdentifier"] == "URN:UVCI:01:FR:T5DWTJYS4ZR8#4") {
         return INV_CERT_TYPE
@@ -17,7 +18,14 @@ export function verifyHcert(hcert) {
     let payload = hcert[1];
 
     // Check for revoked certs
-    if (payload["uniqueIdentifier"] == "URN:UVCI:01:FR:T5DWTJYS4ZR8#4") {
+    if (
+        payload["uniqueIdentifier"] == "URN:UVCI:01:FR:T5DWTJYS4ZR8#4" ||
+        payload["uniqueIdentifier"] == "URN:UVCI:01:PL:1/AF2AA5873FAF45DFA826B8A01237BDC4" ||
+        payload["uniqueIdentifier"] == "URN:UVCI:01:PL:1/2A992C33754A4D379A7F61089485BB75" ||
+        payload["uniqueIdentifier"] == "URN:UVCI:01DE/IZ14482A/2BYU1VFE8L2JDQJHY1QVSK#E" ||
+        payload["uniqueIdentifier"] == "URN:UVCI:01:FR:W7V2BE46QSBJ#L" ||
+        payload["uniqueIdentifier"] == "URN:UVCI:01DE/A80013335/TCXSI5Q08B0DIJGMIZJDF#T"      
+        ) {
         return INV_CERT_TYPE
     }
 
