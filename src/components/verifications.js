@@ -1,10 +1,25 @@
 const CERT_OK = true
 const INV_CERT_TYPE = "Invalid certificate type"
 
+
+export function checkRevokedCerts(hcert) {
+    // The credential
+    let payload = hcert[1];
+
+    if (payload["uniqueIdentifier"] == "URN:UVCI:01:FR:T5DWTJYS4ZR8#4") {
+        return INV_CERT_TYPE
+    }
+}
+
 export function verifyHcert(hcert) {
 
     // The credential
     let payload = hcert[1];
+
+    // Check for revoked certs
+    if (payload["uniqueIdentifier"] == "URN:UVCI:01:FR:T5DWTJYS4ZR8#4") {
+        return INV_CERT_TYPE
+    }
 
     if (payload["certType"] == "v") {
         return verifyVaccinationCert(hcert)
