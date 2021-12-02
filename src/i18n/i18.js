@@ -25,7 +25,6 @@ export class SelectLanguage extends AbstractPage {
         <li> 
             <a class="w3-bar focus-visible-only" @click=${()=>this.selectLang("en")} href="javascript:void(0)">
                 <div class="w3-bar-item" style="padding:8px;">
-                    <img src=${ukflag} style="padding:8px;width:70px">
                     <span class="h3" style="vertical-align:middle;">English</span>
                 </div>
             </a>
@@ -34,7 +33,6 @@ export class SelectLanguage extends AbstractPage {
         <li> 
             <a class="w3-bar focus-visible-only" @click=${()=>this.selectLang("ca")} href="javascript:void(0)">
                 <div class="w3-bar-item" style="padding:8px;">
-                    <img src=${caflag} style="padding:8px;width:70px">
                     <span class="h3" style="vertical-align:middle;">Català</span>
                 </div>
             </a>
@@ -43,7 +41,6 @@ export class SelectLanguage extends AbstractPage {
         <li>
             <a class="w3-bar focus-visible-only" @click=${()=>this.selectLang("es")} href="javascript:void(0)">
                 <div class="w3-bar-item" style="padding:8px;">
-                    <img src=${esflag} style="padding:8px;width:70px">
                     <span class="h3" style="vertical-align:middle;">Español</span>
                 </div>
             </a>
@@ -52,7 +49,6 @@ export class SelectLanguage extends AbstractPage {
         <li>
             <a class="w3-bar focus-visible-only" @click=${()=>this.selectLang("fr")} href="javascript:void(0)">
                 <div class="w3-bar-item" style="padding:8px;">
-                    <img src=${frflag} style="padding:8px;width:70px">
                     <span class="h3" style="vertical-align:middle;">Français</span>
                 </div>
             </a>
@@ -61,7 +57,6 @@ export class SelectLanguage extends AbstractPage {
         <li>
             <a class="w3-bar focus-visible-only" @click=${()=>this.selectLang("de")} href="javascript:void(0)">
                 <div class="w3-bar-item" style="padding:8px;">
-                    <img src=${deflag} style="padding:8px;width:70px">
                     <span class="h3" style="vertical-align:middle;">Deutsch</span>
                 </div>
             </a>
@@ -70,7 +65,6 @@ export class SelectLanguage extends AbstractPage {
         <li>
             <a class="w3-bar focus-visible-only" @click=${()=>this.selectLang("it")} href="javascript:void(0)">
                 <div class="w3-bar-item" style="padding:8px;">
-                    <img src=${itflag} style="padding:8px;width:70px">
                     <span class="h3" style="vertical-align:middle;">Italiano</span>
                 </div>
             </a>

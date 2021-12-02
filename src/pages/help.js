@@ -23,6 +23,7 @@ export class Help extends AbstractPage {
                 <div style="padding-left: 20px;">
                     <p style="margin-bottom: 10px;">${T("$help07")}</p>
                     <p style="margin-bottom: 10px;">${T("$help08")}</p>
+                    <p>${T("$help09")} <a href="https://www.ibsalut.es/ccd-ue" rel="noopener noreferrer" target="_blank">https://www.ibsalut.es/ccd-ue</a></p>&nbsp;
                 </div>
             </div>
         </div>

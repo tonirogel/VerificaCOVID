@@ -457,20 +457,20 @@ export var translations = {
         "it": "-> Què passa si no funciona o el certificat és d’un altre país? "
     },
     "$faqs_answer_5": {
-        "ca":" VerificaCOVID verifica els certificats COVID emesos pels estats membres de la UE i els certificats emesos pel Regne Unit. Podeu descarregar el certificat des del Portal del Pacient",
-        "es": "VerificaCovid verifica los certificados COVID emitidos por los estados miembros de la UE y los certificados emitidos por el Reino Unido. Podéis descargar el certificado desde La Meva Salut",
-        "en": "VerificaCOVID verifica els certificats COVID emesos pels estats membres de la UE i els certificats emesos pel Regne Unit. Podeu descarregar el certificat des del Portal del Pacient",
-        "fr": "VerificaCOVID verifica els certificats COVID emesos pels estats membres de la UE i els certificats emesos pel Regne Unit. Podeu descarregar el certificat des del Portal del Pacient",
-        "de": "VerificaCOVID verifica els certificats COVID emesos pels estats membres de la UE i els certificats emesos pel Regne Unit. Podeu descarregar el certificat des del Portal del Pacient",
-        "it": "VerificaCOVID verifica els certificats COVID emesos pels estats membres de la UE i els certificats emesos pel Regne Unit. Podeu descarregar el certificat des del Portal del Pacient"
+        "ca":" VerificaCOVID verifica els certificats COVID emesos pels estats membres de la UE i els certificats emesos pel Regne Unit. Si sou resident de les Illes Balears, podeu descarregar el certificat des del Portal del Pacient",
+        "es": "VerificaCovid verifica los certificados COVID emitidos por los estados miembros de la UE y los certificados emitidos por el Reino Unido. Si es residente de las Islas Baleares, puede descargar el certificado desde el Portal del Paciente",
+        "en": "VerificaCOVID verifica els certificats COVID emesos pels estats membres de la UE i els certificats emesos pel Regne Unit. Si sou resident de les Illes Balears, podeu descarregar el certificat des del Portal del Pacient",
+        "fr": "VerificaCOVID verifica els certificats COVID emesos pels estats membres de la UE i els certificats emesos pel Regne Unit. Si sou resident de les Illes Balears, podeu descarregar el certificat des del Portal del Pacient",
+        "de": "VerificaCOVID verifica els certificats COVID emesos pels estats membres de la UE i els certificats emesos pel Regne Unit. Si sou resident de les Illes Balears, podeu descarregar el certificat des del Portal del Pacient",
+        "it": "VerificaCOVID verifica els certificats COVID emesos pels estats membres de la UE i els certificats emesos pel Regne Unit. Si sou resident de les Illes Balears, podeu descarregar el certificat des del Portal del Pacient"
     },
     "$faqs_answer_5_2": {
-        "ca": ".",
-        "es": ".",
-        "en": ".",
-        "fr": ".",
-        "de": ".",
-        "it": "."
+        "ca": "o des de l'app de Cita Prèvia.",
+        "es": "o desde la app de Cita Previa.",
+        "en": "o des de l'app de Cita Prèvia.",
+        "fr": "o des de l'app de Cita Prèvia.",
+        "de": "o des de l'app de Cita Prèvia.",
+        "it": "o des de l'app de Cita Prèvia."
     },
     "$faqs_question_6": {
         "ca": "-> He tingut un problema amb l’aplicació. Com ho comunico? ",
