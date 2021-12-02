@@ -49,7 +49,7 @@ function verifyVaccinationCert(hcert) {
     let doseNumber = payload["doseNumber"]
     let doseTotal = payload["doseTotal"]
 
-    if(doseNumber > 2 && doseTotal > 2) {
+    if(doseNumber > 1 && doseNumber == doseTotal) {
         return CERT_OK
     }
 
