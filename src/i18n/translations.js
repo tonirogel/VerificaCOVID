@@ -393,12 +393,12 @@ export var translations = {
         "it": "-> Quins navegadors haig d’utilitzar?"
     },
     "$faqs_answer_1": {
-        "ca": "En la mesura del possible, recomanem que en els mòbils Android s’utilitzi el Google Chrome i en cas de no tenir-lo, el Mozzila FireFox. En cas de tenir un dispositiu IOS, es recomana el Safari.",
-        "es": "En la medida de lo posible, se recomienda que los móviles Android utilicen Google Chrome y en caso de no tenerlo, Mozzila FireFox. En caso de tener un dispositivo IOS, se recomienda Safari.",
-        "en": "En la mesura del possible, recomanem que en els mòbils Android, s’utilitzi el Google Chrome i en cas de no tenir-lo, el Mozzila FireFox. En cas de tenir un dispositiu IOS, es recomana el Safari.",
-        "fr": "En la mesura del possible, recomanem que en els mòbils Android, s’utilitzi el Google Chrome i en cas de no tenir-lo, el Mozzila FireFox. En cas de tenir un dispositiu IOS, es recomana el Safari.",
-        "de": "En la mesura del possible, recomanem que en els mòbils Android, s’utilitzi el Google Chrome i en cas de no tenir-lo, el Mozzila FireFox. En cas de tenir un dispositiu IOS, es recomana el Safari.",
-        "it": "En la mesura del possible, recomanem que en els mòbils Android, s’utilitzi el Google Chrome i en cas de no tenir-lo, el Mozzila FireFox. En cas de tenir un dispositiu IOS, es recomana el Safari."
+        "ca": "En la mesura del possible, recomanem que en els mòbils Android s’utilitzi el Google Chrome i en cas de no tenir-lo, el Mozilla FireFox. En cas de tenir un dispositiu IOS, es recomana el Safari.",
+        "es": "En la medida de lo posible, se recomienda que los móviles Android utilicen Google Chrome y en caso de no tenerlo, Mozilla FireFox. En caso de tener un dispositivo IOS, se recomienda Safari.",
+        "en": "En la mesura del possible, recomanem que en els mòbils Android, s’utilitzi el Google Chrome i en cas de no tenir-lo, el Mozilla FireFox. En cas de tenir un dispositiu IOS, es recomana el Safari.",
+        "fr": "En la mesura del possible, recomanem que en els mòbils Android, s’utilitzi el Google Chrome i en cas de no tenir-lo, el Mozilla FireFox. En cas de tenir un dispositiu IOS, es recomana el Safari.",
+        "de": "En la mesura del possible, recomanem que en els mòbils Android, s’utilitzi el Google Chrome i en cas de no tenir-lo, el Mozilla FireFox. En cas de tenir un dispositiu IOS, es recomana el Safari.",
+        "it": "En la mesura del possible, recomanem que en els mòbils Android, s’utilitzi el Google Chrome i en cas de no tenir-lo, el Mozilla FireFox. En cas de tenir un dispositiu IOS, es recomana el Safari."
     },
     "$faqs_question_2": {
         "ca": "-> L’aplicació no funciona, què faig? ",
@@ -465,12 +465,12 @@ export var translations = {
         "it": "VerificaCOVID verifica els certificats COVID emesos pels estats membres de la UE i els certificats emesos pel Regne Unit. Si sou resident de les Illes Balears, podeu descarregar el certificat des del Portal del Pacient"
     },
     "$faqs_answer_5_2": {
-        "ca": "o des de l'app de Cita Prèvia",
+        "ca": "o des de l’app de Cita Prèvia",
         "es": "o desde la app de Cita Previa",
-        "en": "o des de l'app de Cita Prèvia",
-        "fr": "o des de l'app de Cita Prèvia",
-        "de": "o des de l'app de Cita Prèvia",
-        "it": "o des de l'app de Cita Prèvia"
+        "en": "o des de l’app de Cita Prèvia",
+        "fr": "o des de l’app de Cita Prèvia",
+        "de": "o des de l’app de Cita Prèvia",
+        "it": "o des de l’app de Cita Prèvia"
     },
     "$faqs_question_6": {
         "ca": "-> He tingut un problema amb l’aplicació. Com ho comunico? ",
@@ -481,12 +481,12 @@ export var translations = {
         "it": "-> He tingut un problema amb l’aplicació. Com ho comunico? "
     },
     "$faqs_answer_6": {
-        "ca":"Si heu tingut un problema amb el validador, quan reporteu la incidència informeu del model del mòbil, el navegador que esteu utilitzant i una captura de pantalla amb l’error que us mostra. ",
-        "es": "Si habéis tenido un problema con el validador, cuando reportéis la incidencia informad del modelo del móvil, el navegador que estáis utilitzando y una captura de pantalla con el error que os muestra.",
-        "en": "Si heu tingut un problema amb el validador, quan reporteu la incidència informeu del model del mòbil, el navegador que esteu utilitzant i una captura de pantalla amb l’error que us mostra. ",
-        "fr": "Si heu tingut un problema amb el validador, quan reporteu la incidència informeu del model del mòbil, el navegador que esteu utilitzant i una captura de pantalla amb l’error que us mostra. ",
-        "de": "Si heu tingut un problema amb el validador, quan reporteu la incidència informeu del model del mòbil, el navegador que esteu utilitzant i una captura de pantalla amb l’error que us mostra. ",
-        "it": "Si heu tingut un problema amb el validador, quan reporteu la incidència informeu del model del mòbil, el navegador que esteu utilitzant i una captura de pantalla amb l’error que us mostra. "
+        "ca":"Si heu tingut un problema amb el validador, quan reporteu la incidència informeu del model del mòbil, el navegador que esteu utilitzant i una descripció amb l’error que us mostra. ",
+        "es": "Si habéis tenido un problema con el validador, cuando reportéis la incidencia informad del modelo del móvil, el navegador que estáis utilitzando y una descripción con el error que os muestra.",
+        "en": "Si heu tingut un problema amb el validador, quan reporteu la incidència informeu del model del mòbil, el navegador que esteu utilitzant i una descripció amb l’error que us mostra. ",
+        "fr": "Si heu tingut un problema amb el validador, quan reporteu la incidència informeu del model del mòbil, el navegador que esteu utilitzant i una descripció amb l’error que us mostra. ",
+        "de": "Si heu tingut un problema amb el validador, quan reporteu la incidència informeu del model del mòbil, el navegador que esteu utilitzant i una descripció amb l’error que us mostra. ",
+        "it": "Si heu tingut un problema amb el validador, quan reporteu la incidència informeu del model del mòbil, el navegador que esteu utilitzant i una descripció amb l’error que us mostra. "
     },
     "$faqs_question_7": {
         "ca": "-> He validat un QR i m’ha donat error amb el següent missatge: “Certificat no vàlid perquè la vacunació és massa recent”. Què vol dir? ",
