@@ -465,12 +465,12 @@ export var translations = {
         "it": "VerificaCOVID verifica els certificats COVID emesos pels estats membres de la UE i els certificats emesos pel Regne Unit. Si sou resident de les Illes Balears, podeu descarregar el certificat des del Portal del Pacient"
     },
     "$faqs_answer_5_2": {
-        "ca": "o des de l'app de Cita Prèvia.",
-        "es": "o desde la app de Cita Previa.",
-        "en": "o des de l'app de Cita Prèvia.",
-        "fr": "o des de l'app de Cita Prèvia.",
-        "de": "o des de l'app de Cita Prèvia.",
-        "it": "o des de l'app de Cita Prèvia."
+        "ca": "o des de l'app de Cita Prèvia",
+        "es": "o desde la app de Cita Previa",
+        "en": "o des de l'app de Cita Prèvia",
+        "fr": "o des de l'app de Cita Prèvia",
+        "de": "o des de l'app de Cita Prèvia",
+        "it": "o des de l'app de Cita Prèvia"
     },
     "$faqs_question_6": {
         "ca": "-> He tingut un problema amb l’aplicació. Com ho comunico? ",

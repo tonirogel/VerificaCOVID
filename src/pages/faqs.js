@@ -98,8 +98,11 @@ export class Faqs extends AbstractPage {
                 <span id="faqsitem5" class="w3-bar focus-visible-only hide" href="javascript:void(0)">
                         <div class="w3-bar-item" style="padding:8px; vertical-align:middle;">
                             <span> ${T("$faqs_answer_5")}</span>
-                            <a href=" https://porpac.ibsalut.es" target="_blank">https://porpac.ibsalut.es</a>
+                            <a href="https://porpac.ibsalut.es" target="_blank">https://porpac.ibsalut.es</a>
                             <span> ${T("$faqs_answer_5_2")}</span>
+                            (<a href="https://play.google.com/store/apps/details?id=org.fundaciobit.bitcitawebapp" target="_blank">Android</a>
+                            /
+                            <a href="https://apps.apple.com/es/app/cita-previa-goib/id1460672089" target="_blank">iOS</a>).
                         </div>
                     </span>
             </ul>
