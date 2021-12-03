@@ -153,6 +153,51 @@ export class Faqs extends AbstractPage {
                         </div>
                     </span>
             </ul>
+            <ul class="w3-ul w3-card-4" style="margin-top:5px;" >
+                <li> 
+                    <a class="w3-bar focus-visible-only" @click=${()=>this.toggleFaqs("faqsitem9")} href="javascript:void(0)">
+                        <div class="w3-bar-item" style="padding:8px;">
+                            <span  style="vertical-align:middle;  font-weight: bold;"> ${T("$faqs_question_9")}</span>
+                        </div>
+                    </a>
+                    
+                </li>
+                <span id="faqsitem9" class="w3-bar focus-visible-only hide" href="javascript:void(0)">
+                        <div class="w3-bar-item" style="padding:8px; vertical-align:middle;">
+                            <span> ${T("$faqs_answer_9")}</span>
+                        </div>
+                    </span>
+            </ul>
+            <ul class="w3-ul w3-card-4" style="margin-top:5px;" >
+                <li> 
+                    <a class="w3-bar focus-visible-only" @click=${()=>this.toggleFaqs("faqsitem10")} href="javascript:void(0)">
+                        <div class="w3-bar-item" style="padding:8px;">
+                            <span  style="vertical-align:middle;  font-weight: bold;"> ${T("$faqs_question_10")}</span>
+                        </div>
+                    </a>
+                    
+                </li>
+                <span id="faqsitem10" class="w3-bar focus-visible-only hide" href="javascript:void(0)">
+                        <div class="w3-bar-item" style="padding:8px; vertical-align:middle;">
+                            <span> ${T("$faqs_answer_10")}</span>
+                        </div>
+                    </span>
+            </ul>
+            <ul class="w3-ul w3-card-4" style="margin-top:5px;" >
+                <li> 
+                    <a class="w3-bar focus-visible-only" @click=${()=>this.toggleFaqs("faqsitem11")} href="javascript:void(0)">
+                        <div class="w3-bar-item" style="padding:8px;">
+                            <span  style="vertical-align:middle;  font-weight: bold;"> ${T("$faqs_question_11")}</span>
+                        </div>
+                    </a>
+                    
+                </li>
+                <span id="faqsitem11" class="w3-bar focus-visible-only hide" href="javascript:void(0)">
+                        <div class="w3-bar-item" style="padding:8px; vertical-align:middle;">
+                            <span> ${T("$faqs_answer_11")} <a href="${T("$faqs_answer_11_3")}" target="_blank">${T("$faqs_answer_11_2")}</a> ${T("$faqs_answer_11_4")}</span>
+                        </div>
+                    </span>
+            </ul>
         </div>
         `
         this.render(theHtml)

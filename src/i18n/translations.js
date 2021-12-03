@@ -514,7 +514,7 @@ export var translations = {
     },
     "$faqs_question_8": {
         "ca": "-> Quan valido algun QR, es guarden dades en el mòbil o s’envien dades a algun lloc? ",
-        "es": "-> Cuando valido un QR, ¿se guardan datos en el móvil o se envían datos a algún sitio?",
+        "es": "-> Cuando valido un QR, ¿se guardan datos en el móvil o se envían datos a algún sitio? ",
         "en": "-> Quan valido algun QR, es guarden dades en el mòbil o s’envien dades a algun lloc? ",
         "fr": "-> Quan valido algun QR, es guarden dades en el mòbil o s’envien dades a algun lloc? ",
         "de": "-> Quan valido algun QR, es guarden dades en el mòbil o s’envien dades a algun lloc? ",
@@ -527,6 +527,78 @@ export var translations = {
         "fr": "No. No es guarda ni s’envia cap tipus de dades. Només es mostren momentàniament per pantalla. ",
         "de": "No. No es guarda ni s’envia cap tipus de dades. Només es mostren momentàniament per pantalla. ",
         "it": "No. No es guarda ni s’envia cap tipus de dades. Només es mostren momentàniament per pantalla. "
+    },
+    "$faqs_question_9": {
+        "ca": "-> Es du a terme cap tractament de dades en el procés de validació del codi QR? ",
+        "es": "-> ¿Se lleva a cabo algún tratamiento de datos en el proceso de validación del código QR? ",
+        "en": "-> Es du a terme cap tractament de dades en el procés de validació del codi QR? ",
+        "fr": "-> Es du a terme cap tractament de dades en el procés de validació del codi QR? ",
+        "de": "-> Es du a terme cap tractament de dades en el procés de validació del codi QR? ",
+        "it": "-> Es du a terme cap tractament de dades en el procés de validació del codi QR? "
+    },
+    "$faqs_answer_9": {
+        "ca": "La validació del codi QR es fa fora de línia, de manera que no suposa el tractament ni la incorporació de les vostres dades a cap sistema d’informació. ",
+        "es": "La validación del código QR se hace fuera de línea, de modo que no supone el tratamiento ni la incorporación de sus datos a ningún sistema de información.",
+        "en": "La validació del codi QR es fa fora de línia, de manera que no suposa el tractament ni la incorporació de les vostres dades a cap sistema d’informació. ",
+        "fr": "La validació del codi QR es fa fora de línia, de manera que no suposa el tractament ni la incorporació de les vostres dades a cap sistema d’informació. ",
+        "de": "La validació del codi QR es fa fora de línia, de manera que no suposa el tractament ni la incorporació de les vostres dades a cap sistema d’informació. ",
+        "it": "La validació del codi QR es fa fora de línia, de manera que no suposa el tractament ni la incorporació de les vostres dades a cap sistema d’informació. "
+    },
+    "$faqs_question_10": {
+        "ca": "-> S’estableixen connexions amb altres sistemes? ",
+        "es": "-> ¿Se establecen conexiones con otros sistemas?",
+        "en": "-> S’estableixen connexions amb altres sistemes? ",
+        "fr": "-> S’estableixen connexions amb altres sistemes? ",
+        "de": "-> S’estableixen connexions amb altres sistemes? ",
+        "it": "-> S’estableixen connexions amb altres sistemes? "
+    },
+    "$faqs_answer_10": {
+        "ca": "Tal com hem indicat, la validació del codi QR es fa fora de línia; per tant, no implica connectar-se a altres sistemes ni consultar cap altre sistema. ",
+        "es": "Tal como hemos indicado, la validación del código QR se hace fuera de línea; por lo tanto, no implica conectarse a otros sistemas ni consultar ningún otro sistema.",
+        "en": "Tal com hem indicat, la validació del codi QR es fa fora de línia; per tant, no implica connectar-se a altres sistemes ni consultar cap altre sistema. ",
+        "fr": "Tal com hem indicat, la validació del codi QR es fa fora de línia; per tant, no implica connectar-se a altres sistemes ni consultar cap altre sistema. ",
+        "de": "Tal com hem indicat, la validació del codi QR es fa fora de línia; per tant, no implica connectar-se a altres sistemes ni consultar cap altre sistema. ",
+        "it": "Tal com hem indicat, la validació del codi QR es fa fora de línia; per tant, no implica connectar-se a altres sistemes ni consultar cap altre sistema. "
+    },
+    "$faqs_question_11": {
+        "ca": "-> On puc informar-me sobre els drets en matèria de protecció de dades? ",
+        "es": "-> ¿Dónde puedo informarme sobre los derechos en materia de protección de datos? ",
+        "en": "-> On puc informar-me sobre els drets en matèria de protecció de dades? ",
+        "fr": "-> On puc informar-me sobre els drets en matèria de protecció de dades? ",
+        "de": "-> On puc informar-me sobre els drets en matèria de protecció de dades? ",
+        "it": "-> On puc informar-me sobre els drets en matèria de protecció de dades? "
+    },
+    "$faqs_answer_11": {
+        "ca": "Clicant",
+        "es": "Clicando",
+        "en": "Clicant",
+        "fr": "Clicant",
+        "de": "Clicant",
+        "it": "Clicant"
+    },
+    "$faqs_answer_11_2": {
+        "ca": "aquí",
+        "es": "aquí",
+        "en": "aquí",
+        "fr": "aquí",
+        "de": "aquí",
+        "it": "aquí"
+    },
+    "$faqs_answer_11_3": {
+        "ca": "https://www.ibsalut.es/servei/proteccio-de-dades-personals",
+        "es": "https://www.ibsalut.es/es/servicio-de-salud/proteccion-de-datos-personales",
+        "en": "https://www.ibsalut.es/servei/proteccio-de-dades-personals",
+        "fr": "https://www.ibsalut.es/servei/proteccio-de-dades-personals",
+        "de": "https://www.ibsalut.es/servei/proteccio-de-dades-personals",
+        "it": "https://www.ibsalut.es/servei/proteccio-de-dades-personals"
+    },
+    "$faqs_answer_11_4": {
+        "ca": "trobareu informació sobre els drets en matèria de protecció de dades personals.",
+        "es": "encontrará información sobre los derechos en materia de protección de datos personales.",
+        "en": "trobareu informació sobre els drets en matèria de protecció de dades personals.",
+        "fr": "trobareu informació sobre els drets en matèria de protecció de dades personals.",
+        "de": "trobareu informació sobre els drets en matèria de protecció de dades personals.",
+        "it": "trobareu informació sobre els drets en matèria de protecció de dades personals."
     }
 
 }
