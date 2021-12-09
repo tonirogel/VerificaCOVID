@@ -162,9 +162,9 @@ Añadir un idioma implica dos pasos:
 1. Añadir objetos de traducción en el fichero `translations.js`.
 2. Adding una nueva opción para elegir ese idioma en el fichero `src/i18n/i18.js`.
 
-EL fichero `src/i18n/i18.js` contiene el código para cambiar de idioma en la aplicación. Añadir un nuevo idioma consiste silplemente en un copiar/pegar y modificación del código para un idioma ya existente.
+El fichero `src/i18n/i18.js` contiene el código para cambiar de idioma en la aplicación. Añadir un nuevo idioma consiste simplemente en copiar/pegar y modificación del código para un idioma ya existente.
 
-El icono de la bandera representando el nuevo idioma debe colocarse en el directorio `src/i18n/flags`. Las dimensione sóptimas para el icono son 50x33 pixels.
+El icono de la bandera representando el nuevo idioma debe colocarse en el directorio `src/i18n/flags`. Las dimensiones óptimas para el icono son 50x33 pixels.
 
 ## Modificación de las reglas de verificación de los certificados
 
@@ -172,8 +172,8 @@ Distinguimos entre las reglas de `verificación técnica` y las `reglas de verif
 
 Las reglas de verificación técnicas son normalmente parte del núcleo de la aplicación y no deberían ser diferentes entre diferentes instancias de la misma. Incluyen cosas como:
 
-- Decodificación del QR y la aplicación de una verificación formal para comprobar que contiene los campos relevantes descritos en el formato oficial EU DCC.
-- Comprobación que la firma digital es correcta y que la llave pública del sello usado para firmar el certificad digital está incluída en la lista oficial de llaves publicada por los Estados Miembro.
+- Decodificación del QR y su verificación formal para comprobar que contiene los campos relevantes descritos en el formato oficial EU DCC.
+- Comprobación que la firma digital es correcta y que la llave pública del sello usado para firmar el certificado digital está incluída en la lista oficial de llaves publicada por los Estados Miembro.
 
 Las `reglas de verificación de negocio` se aplican después de las reglas técnicas y se relacionan típicamente con las validaciones de fechas de emisión respecto a verificación, número de dosis requeridas, etc.
 
