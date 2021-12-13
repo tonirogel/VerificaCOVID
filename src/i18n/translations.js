@@ -481,12 +481,12 @@ export var translations = {
         "it": "-> He tingut un problema amb l’aplicació. Com ho comunico? "
     },
     "$faqs_answer_6": {
-        "ca":"Si heu tingut un problema amb el validador, quan reporteu la incidència informeu del model del mòbil, el navegador que esteu utilitzant i una descripció amb l’error que us mostra. ",
-        "es": "Si habéis tenido un problema con el validador, cuando reportéis la incidencia informad del modelo del móvil, el navegador que estáis utilitzando y una descripción con el error que os muestra.",
-        "en": "Si heu tingut un problema amb el validador, quan reporteu la incidència informeu del model del mòbil, el navegador que esteu utilitzant i una descripció amb l’error que us mostra. ",
-        "fr": "Si heu tingut un problema amb el validador, quan reporteu la incidència informeu del model del mòbil, el navegador que esteu utilitzant i una descripció amb l’error que us mostra. ",
-        "de": "Si heu tingut un problema amb el validador, quan reporteu la incidència informeu del model del mòbil, el navegador que esteu utilitzant i una descripció amb l’error que us mostra. ",
-        "it": "Si heu tingut un problema amb el validador, quan reporteu la incidència informeu del model del mòbil, el navegador que esteu utilitzant i una descripció amb l’error que us mostra. "
+        "ca": "Podeu trobar informació de contacte a https://www.ibsalut.es/ccd-ue. ",
+        "es": "Podéis encontrar información de contacto en https://www.ibsalut.es/ccd-ue. ",
+        "en": "Podeu trobar informació de contacte a https://www.ibsalut.es/ccd-ue. ",
+        "fr": "Podeu trobar informació de contacte a https://www.ibsalut.es/ccd-ue. ",
+        "de": "Podeu trobar informació de contacte a https://www.ibsalut.es/ccd-ue. ",
+        "it": "Podeu trobar informació de contacte a https://www.ibsalut.es/ccd-ue. "
     },
     "$faqs_question_7": {
         "ca": "-> He validat un QR i m’ha donat error amb el següent missatge: “Certificat no vàlid perquè la vacunació és massa recent”. Què vol dir? ",
