@@ -198,6 +198,29 @@ export class Faqs extends AbstractPage {
                         </div>
                     </span>
             </ul>
+            <ul class="w3-ul w3-card-4" style="margin-top:5px;" >
+                <li> 
+                    <a class="w3-bar focus-visible-only" @click=${()=>this.toggleFaqs("faqsitem12")} href="javascript:void(0)">
+                        <div class="w3-bar-item" style="padding:8px;">
+                            <span  style="vertical-align:middle;  font-weight: bold;"> ${T("$faqs_question_12")}</span>
+                        </div>
+                    </a>
+                    
+                </li>
+                <span id="faqsitem12" class="w3-bar focus-visible-only hide" href="javascript:void(0)">
+                        <div class="w3-bar-item" style="padding:8px; vertical-align:middle;">
+                            <span> ${T("$faqs_answer_12")}</span>
+                            <br>
+                            <span> <strong>${T("$faqs_answer_12_2")}</strong></span>
+                            <br>
+                            <ul>
+                            <li style="border-bottom:none;"> ${T("$faqs_answer_12_3")}</li>
+                            <li> ${T("$faqs_answer_12_4")}</li>
+                            </ul>
+                            <span> ${T("$faqs_answer_12_5")}</span>
+                        </div>
+                    </span>
+            </ul>
         </div>
         `
         this.render(theHtml)

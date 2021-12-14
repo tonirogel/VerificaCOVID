@@ -599,6 +599,54 @@ export var translations = {
         "fr": "trobareu informació sobre els drets en matèria de protecció de dades personals.",
         "de": "trobareu informació sobre els drets en matèria de protecció de dades personals.",
         "it": "trobareu informació sobre els drets en matèria de protecció de dades personals."
+    },
+    "$faqs_question_12": {
+        "ca": "-> Amb quantes dosis em poden emetre el CCD-UE de vaccinació? Quan és vàlid per accedir a espais? ",
+        "es": "-> ¿Con cuantas dosis me pueden emitir el CCD-UE de vacunación? ¿Cuándo es válido para acceder a espacios? ",
+        "en": "-> Amb quantes dosis em poden emetre el CCD-UE de vaccinació? Quan és vàlid per accedir a espais? ",
+        "fr": "-> Amb quantes dosis em poden emetre el CCD-UE de vaccinació? Quan és vàlid per accedir a espais? ",
+        "de": "-> Amb quantes dosis em poden emetre el CCD-UE de vaccinació? Quan és vàlid per accedir a espais? ",
+        "it": "-> Amb quantes dosis em poden emetre el CCD-UE de vaccinació? Quan és vàlid per accedir a espais? "
+    },
+    "$faqs_answer_12": {
+        "ca": "El certificat de vaccinació es pot sol·licitar i expedir després d’haver-se administrat cada dosi i indicarà clarament si s’ha completat o no el cicle de vaccinació.",
+        "es": "El certificado de vacunación se puede solicitar y expedir después haberse administrado cada dosis e indicará claramente si se ha completado o no el ciclo de vacunación.",
+        "en": "El certificat de vaccinació es pot sol·licitar i expedir després d’haver-se administrat cada dosi i indicarà clarament si s’ha completat o no el cicle de vaccinació.",
+        "fr": "El certificat de vaccinació es pot sol·licitar i expedir després d’haver-se administrat cada dosi i indicarà clarament si s’ha completat o no el cicle de vaccinació.",
+        "de": "El certificat de vaccinació es pot sol·licitar i expedir després d’haver-se administrat cada dosi i indicarà clarament si s’ha completat o no el cicle de vaccinació.",
+        "it": "El certificat de vaccinació es pot sol·licitar i expedir després d’haver-se administrat cada dosi i indicarà clarament si s’ha completat o no el cicle de vaccinació."
+    },
+    "$faqs_answer_12_2": {
+        "ca": "IMPORTANT: Perquè el vostre certificat de vaccinació acrediti que heu rebut la pauta completa i sigui vàlid per accedir als espais on és requerit, ha de complir alguna de les següents condicions:",
+        "es": "IMPORTANTE: Para que su certificado de vacunación acredite que usted ha recibido la pauta completa y sea válido para acceder a los espacios dónde es requerido, debe cumplir alguna de las siguientes condiciones:",
+        "en": "IMPORTANT: Perquè el vostre certificat de vaccinació acrediti que heu rebut la pauta completa i sigui vàlid per accedir als espais on és requerit, ha de complir alguna de les següents condicions:",
+        "fr": "IMPORTANT: Perquè el vostre certificat de vaccinació acrediti que heu rebut la pauta completa i sigui vàlid per accedir als espais on és requerit, ha de complir alguna de les següents condicions:",
+        "de": "IMPORTANT: Perquè el vostre certificat de vaccinació acrediti que heu rebut la pauta completa i sigui vàlid per accedir als espais on és requerit, ha de complir alguna de les següents condicions:",
+        "it": "IMPORTANT: Perquè el vostre certificat de vaccinació acrediti que heu rebut la pauta completa i sigui vàlid per accedir als espais on és requerit, ha de complir alguna de les següents condicions:"
+    },
+    "$faqs_answer_12_3": {
+        "ca": "Mostrar dues dosis (2/2) si us varen vaccinar amb Pfizer, Moderna o Vaxzevria (AstraZeneca).",
+        "es": "Mostrar dos dosis de la vacuna (2/2) si le vacunaron con Pfizer, Moderna o Vaxzevria (AstraZeneca).",
+        "en": "Mostrar dues dosis (2/2) si us varen vaccinar amb Pfizer, Moderna o Vaxzevria (AstraZeneca).",
+        "fr": "Mostrar dues dosis (2/2) si us varen vaccinar amb Pfizer, Moderna o Vaxzevria (AstraZeneca).",
+        "de": "Mostrar dues dosis (2/2) si us varen vaccinar amb Pfizer, Moderna o Vaxzevria (AstraZeneca).",
+        "it": "Mostrar dues dosis (2/2) si us varen vaccinar amb Pfizer, Moderna o Vaxzevria (AstraZeneca)."
+    },
+    "$faqs_answer_12_4": {
+        "ca": "Mostrar una dosi (1/1) si us varen vaccinar amb Janssen o si us varen posar una sola dosi d’un altre vaccí per haver passat la COVID-19.",
+        "es": "Mostrar una dosis (1/1) si le vacunaron con Janssen o si le pusieron una sola dosis de otra vacuna por haber pasado la COVID-19.",
+        "en": "Mostrar una dosi (1/1) si us varen vaccinar amb Janssen o si us varen posar una sola dosi d’un altre vaccí per haver passat la COVID-19.",
+        "fr": "Mostrar una dosi (1/1) si us varen vaccinar amb Janssen o si us varen posar una sola dosi d’un altre vaccí per haver passat la COVID-19.",
+        "de": "Mostrar una dosi (1/1) si us varen vaccinar amb Janssen o si us varen posar una sola dosi d’un altre vaccí per haver passat la COVID-19.",
+        "it": "Mostrar una dosi (1/1) si us varen vaccinar amb Janssen o si us varen posar una sola dosi d’un altre vaccí per haver passat la COVID-19."
+    },
+    "$faqs_answer_12_5": {
+        "ca": "D’altra banda, a mesura que es vagi administrant la dosi de reforç a la població, els certificats actualitzaran el número de dosis rebudes (3/3).",
+        "es": "Por otro lado, a medida que se vaya administrando la dosis de refuerzo a la población, los certificados actualizarán el número de dosis recibidas (3/3).",
+        "en": "D’altra banda, a mesura que es vagi administrant la dosi de reforç a la població, els certificats actualitzaran el número de dosis rebudes (3/3).",
+        "fr": "D’altra banda, a mesura que es vagi administrant la dosi de reforç a la població, els certificats actualitzaran el número de dosis rebudes (3/3).",
+        "de": "D’altra banda, a mesura que es vagi administrant la dosi de reforç a la població, els certificats actualitzaran el número de dosis rebudes (3/3).",
+        "it": "D’altra banda, a mesura que es vagi administrant la dosi de reforç a la població, els certificats actualitzaran el número de dosis rebudes (3/3)."
     }
 
 }

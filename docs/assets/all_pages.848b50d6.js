@@ -1,4 +1,4 @@
-var Do=Object.defineProperty;var Ro=(r,e,t)=>e in r?Do(r,e,{enumerable:!0,configurable:!0,writable:!0,value:t}):r[e]=t;var vr=(r,e,t)=>(Ro(r,typeof e!="symbol"?e+"":e,t),t);import{l as Jr}from"./index.4bb8d061.js";/**
+var Do=Object.defineProperty;var Ro=(r,e,t)=>e in r?Do(r,e,{enumerable:!0,configurable:!0,writable:!0,value:t}):r[e]=t;var vr=(r,e,t)=>(Ro(r,typeof e!="symbol"?e+"":e,t),t);import{l as Jr}from"./index.96560cbd.js";/**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
@@ -587,6 +587,29 @@ If the user would like to obtain more information of the Website’s Privacy Pol
                 <span id="faqsitem11" class="w3-bar focus-visible-only hide" href="javascript:void(0)">
                         <div class="w3-bar-item" style="padding:8px; vertical-align:middle;">
                             <span> ${T("$faqs_answer_11")} <a href="${T("$faqs_answer_11_3")}" target="_blank">${T("$faqs_answer_11_2")}</a> ${T("$faqs_answer_11_4")}</span>
+                        </div>
+                    </span>
+            </ul>
+            <ul class="w3-ul w3-card-4" style="margin-top:5px;" >
+                <li> 
+                    <a class="w3-bar focus-visible-only" @click=${()=>this.toggleFaqs("faqsitem12")} href="javascript:void(0)">
+                        <div class="w3-bar-item" style="padding:8px;">
+                            <span  style="vertical-align:middle;  font-weight: bold;"> ${T("$faqs_question_12")}</span>
+                        </div>
+                    </a>
+                    
+                </li>
+                <span id="faqsitem12" class="w3-bar focus-visible-only hide" href="javascript:void(0)">
+                        <div class="w3-bar-item" style="padding:8px; vertical-align:middle;">
+                            <span> ${T("$faqs_answer_12")}</span>
+                            <br>
+                            <span> <strong>${T("$faqs_answer_12_2")}</strong></span>
+                            <br>
+                            <ul>
+                            <li style="border-bottom:none;"> ${T("$faqs_answer_12_3")}</li>
+                            <li> ${T("$faqs_answer_12_4")}</li>
+                            </ul>
+                            <span> ${T("$faqs_answer_12_5")}</span>
                         </div>
                     </span>
             </ul>
