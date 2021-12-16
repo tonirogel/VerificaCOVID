@@ -1057,7 +1057,9 @@ export class CWT {
             const CWT_CTI = 7;
 
             const HCERT = -260;
+            const HCERT_OCI = -34090;
             const EU_DCC = 1;
+            const CAT_DCC = 34090;
             const T_VACCINATION = "v";
             const T_TEST = "t";
             const T_RECOVERY = "r";
@@ -1100,13 +1102,19 @@ export class CWT {
             // Check for HCERT in payload
             let hcert = decodedPayload.get(HCERT);
             if (hcert == undefined) {
-                throw "No hcert found";
+                hcert = decodedPayload.get(HCERT_OCI);
+                if(hcert == undefined) {
+                    throw "No hcert found";
+                }
             }
 
             // Check for EU COVID certificate inside HCERT
             let euCovid = hcert.get(EU_DCC);
             if (euCovid == undefined) {
-                throw "No EU COVID certificate found";
+                catCovid = hcert.get(CAT_DCC);
+                if(catCovid == undefined) {
+                    throw "No EU COVID certificate found";
+                }
             }
 
             // Common fields
@@ -1182,7 +1190,6 @@ export class CWT {
                 payload["uniqueIdentifier"] = c.get("ci");
 
             }
-
             return payload;
         }
 
