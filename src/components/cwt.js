@@ -1063,7 +1063,6 @@ export class CWT {
             const T_VACCINATION = "v";
             const T_TEST = "t";
             const T_RECOVERY = "r";
-            const T_OCI = "p";
 
             // Make a copy to perform decoding
             payload = payload.slice();
@@ -1145,9 +1144,6 @@ export class CWT {
             } else if (euCovid.get("t")) {
                 payload["certType"] = T_TEST;
                 c = euCovid.get("t")[0];
-            } else if (catCovid.get("p")) {
-                payload["certType"] = T_OCI;
-                c = catCovid.get("p")[0];
             } else {
                 throw `Invalid EU COVID certificate type`;
             }
@@ -1193,10 +1189,7 @@ export class CWT {
                 payload["certificateIssuer"] = c.get("is");
                 payload["uniqueIdentifier"] = c.get("ci");
 
-            } else if (payload["certType"] === T_OCI) {
-                
             }
-
             return payload;
         }
 
