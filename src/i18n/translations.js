@@ -345,12 +345,12 @@ export var translations = {
         "it": "(Attenzione: mancanza di illuminazione, luce eccessiva (riflessi), o vibrazioni, possono impedire una corretta lettura)."
     },
     "$help06": {
-        "es": "Información y confidencialidad",
-        "ca": "Informació i confidencialitat",
-        "en": "Information and confidentiality",
-        "fr": "Informations et confidentialité",
-        "de": "Informationen und Vertraulichkeit",
-        "it": "Informazioni e riservatezza"
+        "es": "Privacidad y confidencialidad",
+        "ca": "Privadesa i confidencialitat",
+        "en": "Privacy and confidentiality",
+        "fr": "Vie privée et confidentialité",
+        "de": "Privatsphäre und vertraulichkeit",
+        "it": "Privacy e riservatezza"
     },
     "$help07": {
         "es": "Sus datos están protegidos, la aplicación no registra ni comparte los datos verificados.",
