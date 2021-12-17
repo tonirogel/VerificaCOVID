@@ -49,17 +49,18 @@ function verifyVaccinationCert(hcert) {
     let doseNumber = payload["doseNumber"]
     let doseTotal = payload["doseTotal"]
 
-    if (doseNumber == doseTotal) {
-        return CERT_OK
-    }
-
     if (doseNumber < doseTotal) {
         return "Vaccination not completed."
     }
 
+	// TODO ¿Comprobar doseNumber > doseTotal? Sería un CCD inválido, pero me fastidia dejar cosas sin validar.
+
+	if ((doseNumber == 3) && (doseTotal == 3)) {
+		// Para los 3/3 asumiremos que tienen un 2/2 en regla, independientemente del tiempo.
+		return CERT_OK;
+	}
     let dateVaccination = Date.parse(payload["dateVaccination"])
     let timeValidFrom = dateVaccination + 14*24*60*60*1000
-
 
     let timeNow = Date.now()
 
