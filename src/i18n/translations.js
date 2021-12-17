@@ -498,19 +498,19 @@ export var translations = {
     },
     "$faqs_answer_7": {
         "ca": "Actualment, segons la normativa vigent, han de passar 14 dies des de l’última dosi.",
-        "es": "Actualemente, según la normativa vigente, han de pasar 14 días desde la última dosis.",
+        "es": "Actualmente, según la normativa vigente, han de pasar 14 días desde la última dosis.",
         "en": "Actualment, segons la normativa vigent, han de passar 14 dies des de l’última dosi.",
         "fr": "Actualment, segons la normativa vigent, han de passar 14 dies des de l’última dosi.",
         "de": "Actualment, segons la normativa vigent, han de passar 14 dies des de l’última dosi.",
         "it": "Actualment, segons la normativa vigent, han de passar 14 dies des de l’última dosi."
     },
     "$faqs_answer_7_2": {
-        "ca": "Això, no obstant, no passa amb la segona (2/2) i tercera dosi (3/3), ja que des del moment que es posa la vacuna el certificat és vàlid.",
-        "es": "Esto, en cambio, no sucede con la segunda y la tercera dosi (3/3), ya que desde el momento que se pone la vacuna el certificado es válido.",
-        "en": "Això, no obstant, no passa amb la segona (2/2) i tercera dosi (3/3), ja que des del moment que es posa la vacuna el certificat és vàlid.",
-        "fr": "Això, no obstant, no passa amb la segona (2/2) i tercera dosi (3/3), ja que des del moment que es posa la vacuna el certificat és vàlid.",
-        "de": "Això, no obstant, no passa amb la segona (2/2) i tercera dosi (3/3), ja que des del moment que es posa la vacuna el certificat és vàlid.",
-        "it": "Això, no obstant, no passa amb la segona (2/2) i tercera dosi (3/3), ja que des del moment que es posa la vacuna el certificat és vàlid."
+        "ca": "Això, no obstant, no passa amb la tercera dosi (3/3), ja que des del moment que es posa la vacuna el certificat és vàlid.",
+        "es": "Esto, en cambio, no sucede con la tercera dosis (3/3), ya que desde el momento que se pone la vacuna el certificado es válido.",
+        "en": "Això, no obstant, no passa amb la tercera dosi (3/3), ja que des del moment que es posa la vacuna el certificat és vàlid.",
+        "fr": "Això, no obstant, no passa amb la tercera dosi (3/3), ja que des del moment que es posa la vacuna el certificat és vàlid.",
+        "de": "Això, no obstant, no passa amb la tercera dosi (3/3), ja que des del moment que es posa la vacuna el certificat és vàlid.",
+        "it": "Això, no obstant, no passa amb la tercera dosi (3/3), ja que des del moment que es posa la vacuna el certificat és vàlid."
     },
     "$faqs_question_8": {
         "ca": "-> Quan valido algun QR, es guarden dades en el mòbil o s’envien dades a algun lloc? ",
@@ -617,36 +617,44 @@ export var translations = {
         "it": "El certificat de vaccinació es pot sol·licitar i expedir després d’haver-se administrat cada dosi i indicarà clarament si s’ha completat o no el cicle de vaccinació."
     },
     "$faqs_answer_12_2": {
-        "ca": "IMPORTANT: Perquè el vostre certificat de vaccinació acrediti que heu rebut la pauta completa i sigui vàlid per accedir als espais on és requerit, ha de complir alguna de les següents condicions:",
-        "es": "IMPORTANTE: Para que su certificado de vacunación acredite que usted ha recibido la pauta completa y sea válido para acceder a los espacios dónde es requerido, debe cumplir alguna de las siguientes condiciones:",
-        "en": "IMPORTANT: Perquè el vostre certificat de vaccinació acrediti que heu rebut la pauta completa i sigui vàlid per accedir als espais on és requerit, ha de complir alguna de les següents condicions:",
-        "fr": "IMPORTANT: Perquè el vostre certificat de vaccinació acrediti que heu rebut la pauta completa i sigui vàlid per accedir als espais on és requerit, ha de complir alguna de les següents condicions:",
-        "de": "IMPORTANT: Perquè el vostre certificat de vaccinació acrediti que heu rebut la pauta completa i sigui vàlid per accedir als espais on és requerit, ha de complir alguna de les següents condicions:",
-        "it": "IMPORTANT: Perquè el vostre certificat de vaccinació acrediti que heu rebut la pauta completa i sigui vàlid per accedir als espais on és requerit, ha de complir alguna de les següents condicions:"
+        "ca": "ACCÉS A ESPAIS: Perquè el certificat de vaccinació acrediti que heu rebut la pauta completa, ha de complir alguna de les següents condicions per a qualsevol persona a partir dels 12 anys:",
+        "es": "ACCESO A ESPACIOS: Para que el certificado de vacunación acredite que ha recibido la pauta completa, tiene que cumplir alguna de las siguientes condiciones para cualquier persona a partir de los 12 años:",
+        "en": "ACCÉS A ESPAIS: Perquè el certificat de vaccinació acrediti que heu rebut la pauta completa, ha de complir alguna de les següents condicions per a qualsevol persona a partir dels 12 anys:",
+        "fr": "ACCÉS A ESPAIS: Perquè el certificat de vaccinació acrediti que heu rebut la pauta completa, ha de complir alguna de les següents condicions per a qualsevol persona a partir dels 12 anys:",
+        "de": "ACCÉS A ESPAIS: Perquè el certificat de vaccinació acrediti que heu rebut la pauta completa, ha de complir alguna de les següents condicions per a qualsevol persona a partir dels 12 anys:",
+        "it": "ACCÉS A ESPAIS: Perquè el certificat de vaccinació acrediti que heu rebut la pauta completa, ha de complir alguna de les següents condicions per a qualsevol persona a partir dels 12 anys:"
     },
     "$faqs_answer_12_3": {
-        "ca": "Mostrar dues dosis (2/2) si us varen vaccinar amb Pfizer, Moderna o Vaxzevria (AstraZeneca).",
-        "es": "Mostrar dos dosis de la vacuna (2/2) si le vacunaron con Pfizer, Moderna o Vaxzevria (AstraZeneca).",
-        "en": "Mostrar dues dosis (2/2) si us varen vaccinar amb Pfizer, Moderna o Vaxzevria (AstraZeneca).",
-        "fr": "Mostrar dues dosis (2/2) si us varen vaccinar amb Pfizer, Moderna o Vaxzevria (AstraZeneca).",
-        "de": "Mostrar dues dosis (2/2) si us varen vaccinar amb Pfizer, Moderna o Vaxzevria (AstraZeneca).",
-        "it": "Mostrar dues dosis (2/2) si us varen vaccinar amb Pfizer, Moderna o Vaxzevria (AstraZeneca)."
+        "ca": "Mostrar pauta monodosi 1/1 i haver passat 14 dies (vaccinats Janssen o una sola dosi d’un altre vaccí per haver passat la COVID-19).",
+        "es": "Mostrar pauta monodosis 1/1 y haber pasado 14 días (vacunados con Janssen o una sola dosis de otra vacuna por haber pasado la COVID-19).",
+        "en": "Mostrar pauta monodosi 1/1 i haver passat 14 dies (vaccinats Janssen o una sola dosi d’un altre vaccí per haver passat la COVID-19).",
+        "fr": "Mostrar pauta monodosi 1/1 i haver passat 14 dies (vaccinats Janssen o una sola dosi d’un altre vaccí per haver passat la COVID-19).",
+        "de": "Mostrar pauta monodosi 1/1 i haver passat 14 dies (vaccinats Janssen o una sola dosi d’un altre vaccí per haver passat la COVID-19).",
+        "it": "Mostrar pauta monodosi 1/1 i haver passat 14 dies (vaccinats Janssen o una sola dosi d’un altre vaccí per haver passat la COVID-19)."
     },
     "$faqs_answer_12_4": {
-        "ca": "Mostrar una dosi (1/1) si us varen vaccinar amb Janssen o si us varen posar una sola dosi d’un altre vaccí per haver passat la COVID-19.",
-        "es": "Mostrar una dosis (1/1) si le vacunaron con Janssen o si le pusieron una sola dosis de otra vacuna por haber pasado la COVID-19.",
-        "en": "Mostrar una dosi (1/1) si us varen vaccinar amb Janssen o si us varen posar una sola dosi d’un altre vaccí per haver passat la COVID-19.",
-        "fr": "Mostrar una dosi (1/1) si us varen vaccinar amb Janssen o si us varen posar una sola dosi d’un altre vaccí per haver passat la COVID-19.",
-        "de": "Mostrar una dosi (1/1) si us varen vaccinar amb Janssen o si us varen posar una sola dosi d’un altre vaccí per haver passat la COVID-19.",
-        "it": "Mostrar una dosi (1/1) si us varen vaccinar amb Janssen o si us varen posar una sola dosi d’un altre vaccí per haver passat la COVID-19."
+        "ca": "Mostrar pauta de dues dosis 2/2 i haver passat 14 dies des de la segona.",
+        "es": "Mostrar pauta de dos dosis 2/2 y haber pasado 14 días desde la segunda.",
+        "en": "Mostrar pauta de dues dosis 2/2 i haver passat 14 dies des de la segona.",
+        "fr": "Mostrar pauta de dues dosis 2/2 i haver passat 14 dies des de la segona.",
+        "de": "Mostrar pauta de dues dosis 2/2 i haver passat 14 dies des de la segona.",
+        "it": "Mostrar pauta de dues dosis 2/2 i haver passat 14 dies des de la segona."
     },
     "$faqs_answer_12_5": {
-        "ca": "D’altra banda, a mesura que es vagi administrant la dosi de reforç a la població, els certificats actualitzaran el número de dosis rebudes (3/3).",
-        "es": "Por otro lado, a medida que se vaya administrando la dosis de refuerzo a la población, los certificados actualizarán el número de dosis recibidas (3/3).",
-        "en": "D’altra banda, a mesura que es vagi administrant la dosi de reforç a la població, els certificats actualitzaran el número de dosis rebudes (3/3).",
-        "fr": "D’altra banda, a mesura que es vagi administrant la dosi de reforç a la població, els certificats actualitzaran el número de dosis rebudes (3/3).",
-        "de": "D’altra banda, a mesura que es vagi administrant la dosi de reforç a la població, els certificats actualitzaran el número de dosis rebudes (3/3).",
-        "it": "D’altra banda, a mesura que es vagi administrant la dosi de reforç a la població, els certificats actualitzaran el número de dosis rebudes (3/3)."
+        "ca": "Mostrar tres dosis 3/3 amb validesa immediata si us han administrat la dosi de reforç.",
+        "es": "Mostrar tres dosis 3/3 con validez inmediata si le han administrado la dosis de refuerzo.",
+        "en": "Mostrar tres dosis 3/3 amb validesa immediata si us han administrat la dosi de reforç.",
+        "fr": "Mostrar tres dosis 3/3 amb validesa immediata si us han administrat la dosi de reforç.",
+        "de": "Mostrar tres dosis 3/3 amb validesa immediata si us han administrat la dosi de reforç.",
+        "it": "Mostrar tres dosis 3/3 amb validesa immediata si us han administrat la dosi de reforç."
+    },
+    "$faqs_answer_12_6": {
+        "ca": "Els certificats de vaccinació amb pauta 1/2 NO són vàlids per accedir als espais on l'ús n'és obligatori.",
+        "es": "Los certificados de vacunación con pauta 1/2 NO son válidos para acceder en los espacios donde su uso es obligatorio.",
+        "en": "Els certificats de vaccinació amb pauta 1/2 NO són vàlids per accedir als espais on l'ús n'és obligatori.",
+        "fr": "Els certificats de vaccinació amb pauta 1/2 NO són vàlids per accedir als espais on l'ús n'és obligatori.",
+        "de": "Els certificats de vaccinació amb pauta 1/2 NO són vàlids per accedir als espais on l'ús n'és obligatori.",
+        "it": "Els certificats de vaccinació amb pauta 1/2 NO són vàlids per accedir als espais on l'ús n'és obligatori."
     }
 
 }
