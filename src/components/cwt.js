@@ -1284,7 +1284,7 @@ export class CWT {
         if (verify) {
             // Get the kid from the header (can be in protected and in unprotected)
             let kid = headers["kid"];
-
+			console.log("Looking for KID " + kid);
             let k = await getTrustedKey(kid)
             if (k !== undefined) {
 
