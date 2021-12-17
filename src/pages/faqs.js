@@ -215,9 +215,10 @@ export class Faqs extends AbstractPage {
                             <br>
                             <ul>
                             <li style="border-bottom:none;"> ${T("$faqs_answer_12_3")}</li>
-                            <li> ${T("$faqs_answer_12_4")}</li>
+                            <li style="border-bottom:none;"> ${T("$faqs_answer_12_4")}</li>
+                            <li> ${T("$faqs_answer_12_5")}</li>
                             </ul>
-                            <span> ${T("$faqs_answer_12_5")}</span>
+                            <span> <strong>${T("$faqs_answer_12_6")}</strong></span>
                         </div>
                     </span>
             </ul>
