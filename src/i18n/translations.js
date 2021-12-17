@@ -512,6 +512,14 @@ export var translations = {
         "de": "Això, no obstant, no passa amb la tercera dosi (3/3), ja que des del moment que es posa la vacuna el certificat és vàlid.",
         "it": "Això, no obstant, no passa amb la tercera dosi (3/3), ja que des del moment que es posa la vacuna el certificat és vàlid."
     },
+	"$faqs_answer_7_3": {
+		"ca": "Si teniu certificat amb pauta 1/1 i us han posat dosi de reforç, podeu seguir emprant el 1/1 fins que hagin passat 14 dies per a la validessa del nou certificat 2/2.",
+		"es": "Si tiene certificado con pauta 1/1 i le han administrado dosis de refuerzo, puede seguir usando el 1/1 hasta que hayan pasado 14 días para que su nuevo certificado 2/2 sea válido.",
+		"en": "Si teniu certificat amb pauta 1/1 i us han posat dosi de reforç, podeu seguir emprant el 1/1 fins que hagin passat 14 dies per a la validessa del nou certificat 2/2.",
+		"fr": "Si teniu certificat amb pauta 1/1 i us han posat dosi de reforç, podeu seguir emprant el 1/1 fins que hagin passat 14 dies per a la validessa del nou certificat 2/2.",
+		"de": "Si teniu certificat amb pauta 1/1 i us han posat dosi de reforç, podeu seguir emprant el 1/1 fins que hagin passat 14 dies per a la validessa del nou certificat 2/2.",
+		"it": "Si teniu certificat amb pauta 1/1 i us han posat dosi de reforç, podeu seguir emprant el 1/1 fins que hagin passat 14 dies per a la validessa del nou certificat 2/2.",
+	},		
     "$faqs_question_8": {
         "ca": "-> Quan valido algun QR, es guarden dades en el mòbil o s’envien dades a algun lloc? ",
         "es": "-> Cuando valido un QR, ¿se guardan datos en el móvil o se envían datos a algún sitio? ",

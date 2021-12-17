@@ -135,6 +135,8 @@ export class Faqs extends AbstractPage {
                             <span> ${T("$faqs_answer_7")}</span>
                             <br>
                             <span> ${T("$faqs_answer_7_2")}</span>
+                            <br>
+                            <span> ${T("$faqs_answer_7_3")}</span>
                         </div>
                     </span>
             </ul>
