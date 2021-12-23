@@ -1,0 +1,15 @@
+{
+  "FCzMMQyHSD8=": {
+    "co": "ES",
+    "kid": "FCzMMQyHSD8=",
+    "jwk": {
+      "kty": "EC",
+      "x5t#S256": "FCzMMQyHSD-GrzKeeerw4Z5Sz81R2ov5C9QzGOLJWFU=",
+      "use": "sig",
+      "crv": "P-256",
+      "kid": "FCzMMQyHSD8=",
+      "x": "jLj0ee0crR8drqzg7kn-Z2axBBU4213tbPpgaL1EiUM",
+      "y": "3loVtEGnjlNx81Zgo1EfUjqI6dS-81_YjrqBmqZ35Bc"
+    }
+  }
+}

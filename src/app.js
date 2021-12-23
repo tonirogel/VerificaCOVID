@@ -238,6 +238,7 @@ initialScreen();
 
 // Embed the trusted lists
 import eu_jwk_keys from "./json/eu_jwk_keys.json"
+import cat_jwk_keys from "./json/cat_jwk_keys.json"
 import prePublicKeys from "./json/pre_jwk_keys.json"
 import valueSets from "./json/value-sets.json"
 
@@ -246,15 +247,22 @@ import ukRawKeys from "./json/uk_jwk_keys.json"
 
 // Set the initial value of the EU Trusted List, to be refreshed later
 var eu_trusted_keys = eu_jwk_keys
+var cat_trusted_keys = cat_jwk_keys
 
 // This function refreshes the EU trusted list
 export async function refreshTrustedKeys() {
-    let response = await fetch("./eu_jwk_keys.json")
+    let response_eu = await fetch("./eu_jwk_keys.json")
     if (!response.ok) {
         log.myerror("fetch for TL failed");
         return;
     }
-    eu_trusted_keys = await response.json()
+    eu_trusted_keys = await response_eu.json()
+    let response_cat = await fetch("./cat_jwk_keys.json")
+    if (!response1.ok) {
+        log.myerror("fetch for TL failed");
+        return;
+    }
+    cat_trusted_keys = await response_cat.json()
     return;
 }
 window.refreshTrustedKeys = refreshTrustedKeys
@@ -297,6 +305,19 @@ async function getTrustedKey(kid) {
         }
     }
     log.mywarn(`kid "${kid}" not found in UK_PRO trusted list`)
+
+    // Now check iin the PRODUCTION list from the Catalonia 
+    let entry2 = cat_trusted_keys[kid]
+    if (entry2) {
+        console.log(`kid "${kid}" found in CAT_PRO trusted list`)
+        return {
+            kid: kid,
+            publicKey: entry2.jwk,
+            list: "CAT_PRO",
+            format: "jwk"
+        }
+    }
+    log.mywarn(`kid "${kid}" not found in CAT_PRO trusted list`)
 
     // And finally in the PREPRODUCTION EU list
     if (prePublicKeys.includes(kid)) {
