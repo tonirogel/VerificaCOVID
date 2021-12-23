@@ -1312,6 +1312,15 @@ export class CWT {
                     // Verify the CWT with the verification key
                     verified = await CWT.verifyCWT(data, verificationKey);
     
+                } else if (k.list === "CAT_PRO") {
+
+                    // Create the native public key
+                    console.log(k)
+                    let verificationKey = await DGCKey.fromJWK(k.publicKey);
+    
+                    // Verify the CWT with the verification key
+                    verified = await CWT.verifyCWT(data, verificationKey);
+    
                 } else if (k.list === "EU_PREPRODUCTION") {
     
                     // Signal that the list is in PRE
