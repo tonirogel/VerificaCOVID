@@ -1,4 +1,4 @@
-var Ro=Object.defineProperty;var No=(r,e,t)=>e in r?Ro(r,e,{enumerable:!0,configurable:!0,writable:!0,value:t}):r[e]=t;var xr=(r,e,t)=>(No(r,typeof e!="symbol"?e+"":e,t),t);import{l as tn}from"./index.a00ffc43.js";/**
+var Ro=Object.defineProperty;var No=(r,e,t)=>e in r?Ro(r,e,{enumerable:!0,configurable:!0,writable:!0,value:t}):r[e]=t;var xr=(r,e,t)=>(No(r,typeof e!="symbol"?e+"":e,t),t);import{l as tn}from"./index.34867cb9.js";/**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
@@ -32,8 +32,6 @@ var Ro=Object.defineProperty;var No=(r,e,t)=>e in r?Ro(r,e,{enumerable:!0,config
                     <div class="subsection">
                         <div class="etiqueta">${T("Date of birth")}</div>
                         <div class="valor h4">${n.dateOfBirth}</div>
-                        <div class="valor h4">${n.hcert}</div>
-
                     </div>
                 </div>
            
