@@ -1,0 +1,150 @@
+[
+  {
+    "identifier": "C-V-0001",
+    "version": "1.0.0",
+    "schemaVersion": "1.0.0",
+    "engine": "IN2COVID",
+    "engineVersion": "1.0.0",
+    "certificateType": "Vaccination",
+    "description": "The Field 'Doses' serie must be completed",
+    "validFrom": "2021-05-27T07:46:40Z",
+    "validTo": "2021-06-01T07:46:40Z",
+    "affectedFields": ["dn", "sd"],
+    "error": "validationResult.certnocomplete",
+    "logic": {
+      "if": [
+        {
+          "===": [
+            {
+              "var": "dn"
+            },
+            {
+              "var": "sd"
+            }
+          ]
+        },
+        true,
+        false
+      ]
+    }
+  },
+  {
+    "identifier": "C-V-0002",
+    "version": "1.0.0",
+    "schemaVersion": "1.0.0",
+    "engine": "IN2COVID",
+    "engineVersion": "1.0.0",
+    "certificateType": "Vaccination",
+    "description": "The serie number is bigger than 2 or vaccinationDate is enought late",
+    "validFrom": "2021-05-27T07:46:40Z",
+    "validTo": "2021-06-01T07:46:40Z",
+    "affectedFields": ["dt", "sd", "today"],
+    "error": "validationResult.certnotvalid",
+    "logic": {
+      "if": [
+        {
+          ">=": [{ "var": "sd" }, 2]
+        },
+        {
+          "before": [
+            {
+              "var": "dt"
+            },
+            {
+              "plusTime": [{ "var": "today" }, 14, "day"]
+            }
+          ]
+        },
+        true,
+        false
+      ]
+    }
+  },
+  {
+    "identifier": "C-T-0001",
+    "version": "1.0.0",
+    "schemaVersion": "1.0.0",
+    "engine": "IN2COVID",
+    "engineVersion": "1.0.0",
+    "certificateType": "Test",
+    "description": "The test has taken less than x hourse or ir Rapid immunoassay and has taken less than y hours",
+    "validFrom": "2021-05-27T07:46:40Z",
+    "validTo": "2021-06-01T07:46:40Z",
+    "affectedFields": ["tt", "sc"],
+    "error": "validationResult.certexpired",
+    "logic": {
+      "if": [
+        {
+          "and": [
+            {
+              "==": [{ "var": "tt" }, "Rapid immunoassay"]
+            },
+            {
+              "after": [
+                {
+                  "var": "sc"
+                },
+                {
+                  "plusTime": [{ "var": "today" }, 72, "hours"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "and": [
+            {
+              "!=": [
+                {
+                  "var": "tt"
+                },
+                "Rapid immunoassay"
+              ]
+            },
+            {
+              "before": [
+                {
+                  "var": "sc"
+                },
+                {
+                  "plusTime": [{ "var": "today" }, 48, "hours"]
+                }
+              ]
+            }
+          ]
+        },
+        true,
+        false
+      ]
+    }
+  },
+  {
+    "identifier": "C-R-0001",
+    "version": "1.0.0",
+    "schemaVersion": "1.0.0",
+    "engine": "IN2COVID",
+    "engineVersion": "1.0.0",
+    "certificateType": "Recovery",
+    "description": "The recovery is not expired",
+    "validFrom": "2021-05-27T07:46:40Z",
+    "validTo": "2021-06-01T07:46:40Z",
+    "affectedFields": ["du"],
+    "error": "validationResult.certexpired",
+    "logic": {
+      "if": [
+        {
+          "before": [
+            {
+              "var": "dt"
+            },
+            {
+              "plusTime": [{ "var": "today" }, 1, "day"]
+            }
+          ]
+        },
+        true,
+        false
+      ]
+    }
+  }
+]
