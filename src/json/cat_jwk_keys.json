@@ -11,5 +11,18 @@
       "x": "jLj0ee0crR8drqzg7kn-Z2axBBU4213tbPpgaL1EiUM",
       "y": "3loVtEGnjlNx81Zgo1EfUjqI6dS-81_YjrqBmqZ35Bc"
     }
+  },
+  "-fA3GzQ4jkk=":{
+    "co": "CAT",
+    "kid": "-fA3GzQ4jkk=",
+    "jwk": {
+      "kty": "EC",
+      "x5t#S256": "-fA3GzQ4jknBUaIc31LLQFmSnKqvC1HTkb3GLS035oA=",
+      "use": "sig",
+      "crv": "P-256",
+      "kid": "-fA3GzQ4jkk=",
+      "x": "9hJB6caTWukZE14kn_OG1rfIdz670E5j5K2971ZgAOE",
+      "y": "71UOZXY6JZQSMj1nvS4qc9xsUu-8_XZuLUDUrTT1fHI"
+    }
   }
 }
