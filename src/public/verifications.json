@@ -54,7 +54,7 @@
                   "var": "dt"
                 },
                 {
-                  "plusTime": [{ "var": "today" }, 14, "day"]
+                  "plusTime": [{ "var": "today" }, -14, "day"]
                 }
               ]
             },
@@ -90,7 +90,7 @@
                   "var": "sc"
                 },
                 {
-                  "plusTime": [{ "var": "today" }, 72, "hour"]
+                  "plusTime": [{ "var": "today" }, -72, "hour"]
                 }
               ]
             }
@@ -119,7 +119,7 @@
                       "var": "sc"
                     },
                     {
-                      "plusTime": [{ "var": "today" }, 48, "hour"]
+                      "plusTime": [{ "var": "today" }, -48, "hour"]
                     }
                   ]
                 }
@@ -152,7 +152,7 @@
               "var": "dt"
             },
             {
-              "plusTime": [{ "var": "today" }, 1, "day"]
+              "plusTime": [{ "var": "today" }, -2, "day"]
             }
           ]
         },
