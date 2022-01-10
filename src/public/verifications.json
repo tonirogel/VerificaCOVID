@@ -147,9 +147,9 @@
     "logic": {
       "if": [
         {
-          "before": [
+          "after": [
             {
-              "var": "dt"
+              "var": "du"
             },
             {
               "plusTime": [{ "var": "today" }, -2, "day"]
