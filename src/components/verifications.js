@@ -67,9 +67,10 @@ function verifyVaccinationCert(hcert) {
         //Check if last dose was taken more than 14 days before.
         if(timeNow >= timeValidFrom) {
             //Check if last dose was taken more than 270 days at is more than 18 years old.
-            if(timeNow > timeValidationExpired && timeNow >= time18Years){
-                return "Certificate is expired"
-            }
+            // ignorar temporalmente la validación de menos de 270 dias
+            // if(timeNow > timeValidationExpired && timeNow >= time18Years){
+            //     return "Certificate is expired"
+            // }
             return CERT_OK
         }
         return "Certificate is not yet valid as vaccination is too recent." 

@@ -649,12 +649,12 @@ export var translations = {
         "it": "Mostrar pauta de dues dosis 2/2 i haver passat 14 dies des de la segona."
     },
     "$faqs_answer_12_5": {
-        "ca": "Mostrar tres dosis 3/3 amb validesa immediata si us han administrat la dosi de reforç.",
-        "es": "Mostrar tres dosis 3/3 con validez inmediata si le han administrado la dosis de refuerzo.",
-        "en": "Mostrar tres dosis 3/3 amb validesa immediata si us han administrat la dosi de reforç.",
-        "fr": "Mostrar tres dosis 3/3 amb validesa immediata si us han administrat la dosi de reforç.",
-        "de": "Mostrar tres dosis 3/3 amb validesa immediata si us han administrat la dosi de reforç.",
-        "it": "Mostrar tres dosis 3/3 amb validesa immediata si us han administrat la dosi de reforç."
+        "ca": "Mostrar tres dosis 3/3 o dues dosis 2/1 amb validesa immediata si us han administrat la dosi de reforç.",
+        "es": "Mostrar tres dosis 3/3 o dos dosis 2/1 con validez inmediata si le han administrado la dosis de refuerzo.",
+        "en": "Mostrar tres dosis 3/3 o dues dosis 2/1 amb validesa immediata si us han administrat la dosi de reforç.",
+        "fr": "Mostrar tres dosis 3/3 o dues dosis 2/1 amb validesa immediata si us han administrat la dosi de reforç.",
+        "de": "Mostrar tres dosis 3/3 o dues dosis 2/1 amb validesa immediata si us han administrat la dosi de reforç.",
+        "it": "Mostrar tres dosis 3/3 o dues dosis 2/1 amb validesa immediata si us han administrat la dosi de reforç."
     },
     "$faqs_answer_12_6": {
         "ca": "Els certificats de vaccinació amb pauta 1/2 NO són vàlids per accedir als espais on l'ús n'és obligatori.",
